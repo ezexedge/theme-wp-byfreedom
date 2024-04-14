@@ -1,0 +1,37 @@
+.carousel-inner {
+    height: 648px; /* Altura máxima de 648px */
+    width: 100%;
+
+    display: flex; /* Establecer el contenedor como un flex container */
+
+    align-items: center; /* Centrar los elementos verticalmente */
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel .carousel-indicators button {
+    width: 15px;
+   height: 15px;
+   margin: 5px;
+   border-radius: 100%;
+   background-color: #DDE0E4!important;
+ }
+ .carousel .carousel-indicators .active {
+    background-color: #1A202C !important; /* Color de fondo del indicador activo */
+    width: 45px; /* Ancho del indicador */
+    height: 15px; /* Altura del indicador */
+    border-radius: 10px; /* Radio de los bordes (la mitad de la altura) */
+
+}
+
+
+.carousel-indicators [data-bs-target]{
+    border-bottom: 0px!important;
+    border-top: 0px!important;
+}

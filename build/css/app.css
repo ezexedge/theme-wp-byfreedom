@@ -1,0 +1,559 @@
+@charset "UTF-8";
+.middle {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.carousel-inner {
+  height: 648px; /* Altura máxima de 648px */
+  width: 100%;
+  display: flex; /* Establecer el contenedor como un flex container */
+  align-items: center; /* Centrar los elementos verticalmente */
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 100%;
+  background-color: #DDE0E4 !important;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #1A202C !important; /* Color de fondo del indicador activo */
+  width: 45px; /* Ancho del indicador */
+  height: 15px; /* Altura del indicador */
+  border-radius: 10px; /* Radio de los bordes (la mitad de la altura) */
+}
+
+.carousel-indicators [data-bs-target] {
+  border-bottom: 0px !important;
+  border-top: 0px !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__img {
+  align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+  max-width: 500px;
+  height: 523px;
+  background-image: url("../../../byfreedom/build/img/header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+}
+.header__text-start {
+  font-weight: 500;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 22px;
+  /* identical to box height, or 105% */
+  letter-spacing: 0.15px;
+  /* Neutral/10 */
+  color: #486284;
+}
+.header__text-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  letter-spacing: 0.15px;
+  /* Neutral/10 */
+  color: #486284;
+}
+.header__text-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+  letter-spacing: 0.5px;
+  color: #8CA2C0;
+}
+.header__text__btn {
+  display: flex;
+}
+.header__text__btn-conducir {
+  /* Style=Filled */
+  box-sizing: border-box;
+  margin-right: 25px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  width: 170px;
+  height: 48px;
+  /* Neutral/10 */
+  background: #486284;
+  /* Neutral/10 */
+  border: 1px solid #486284;
+  border-radius: 50px;
+  /* Do something */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  /* Neutral/0 */
+  color: #FFFFFF;
+}
+.header__text__btn-informacion {
+  /* Style=Outlined */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  width: 170px;
+  height: 48px;
+  /* Neutral/10 */
+  border: 1px solid #486284;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  /* Neutral/10 */
+  color: #486284;
+}
+.header__text__logo {
+  /* Trusted by: */
+  margin-top: 26px;
+  display: flex;
+  /* subtitle/small */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 22px;
+  /* or 105% */
+  letter-spacing: 0.15px;
+  /* Neutral/6 */
+  color: #9CB0C9;
+}
+.header__text__logo-img {
+  background-image: url("../../../byfreedom/build/img/cabify.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 114px;
+  height: 38px;
+  margin-left: 15px;
+  background-position: top top;
+}
+
+.rent {
+  background-color: #EEEEEE;
+  padding: 86px 0px;
+}
+.rent__title {
+  /* ¿Por qué rentar? */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #486284;
+}
+.rent__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  align-items: center;
+  text-align: center;
+  /* Black */
+  color: #1A202C;
+}
+.rent__information {
+  margin-top: 75px;
+}
+.rent__information__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.rent__information__item-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.rent__information__item-text {
+  padding: 0px 35px;
+}
+.rent__information__item-text-title {
+  margin-bottom: 10px;
+  /* Choose Location */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  letter-spacing: -0.02em;
+  /* Black */
+  color: #1A202C;
+}
+.rent__information__item-text-text {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 175%;
+  /* or 24px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  /* Black */
+  color: #1A202C;
+}
+
+.invest {
+  padding: 86px 0px;
+  text-align: center;
+}
+.invest__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  /* or 72px */
+  letter-spacing: -0.02em;
+  color: #486284;
+}
+.invest__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* Black */
+  color: #1A202C;
+}
+.invest__information {
+  margin-top: 75px;
+}
+.invest__information__number h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px !important;
+  /* or 122px */
+  text-align: center;
+  color: #000000;
+}
+.invest__information__text {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+  padding: 0px 35px;
+}
+.invest__information__text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 175%;
+  /* or 24px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  /* Black */
+  color: #1A202C;
+}
+.invest__btn {
+  /* Style=Filled */
+  margin-top: 35px;
+  box-sizing: border-box;
+  /* Auto layout */
+  /* Do something */
+  /* body/small */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  /* Neutral/0 */
+  color: #FFFFFF;
+  padding: 12px 20px;
+  gap: 10px;
+  /* Neutral/10 */
+  background: #486284;
+  /* Neutral/10 */
+  border: 1px solid #486284;
+  border-radius: 50px;
+}
+
+.drive {
+  background-color: #EEEEEE;
+  padding: 50px 0px;
+  text-align: center;
+}
+.drive__title {
+  /* ¿Que vehículos voy a conducir? */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  /* identical to box height, or 72px */
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #486284;
+}
+.drive__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 30px;
+  text-align: center;
+  /* Black */
+  color: #1A202C;
+}
+.drive__card {
+  display: flex;
+  justify-content: center;
+}
+.drive__card__item {
+  width: 304px;
+  height: 388px;
+  background-image: url("../../../byfreedom/build/img/drive.png");
+  background-position: center;
+  background-size: contain;
+  margin: 0px 30px;
+  margin-top: 66px;
+  margin-bottom: 30px;
+}
+.drive__btn {
+  /* Style=Filled */
+  box-sizing: border-box;
+  /* Neutral/10 */
+  background: #486284;
+  /* Neutral/10 */
+  border: 1px solid #486284;
+  border-radius: 50px;
+  align-items: center;
+  padding: 12px 20px;
+  /* Do something */
+  /* body/small */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  /* Neutral/0 */
+  color: #FFFFFF;
+}
+
+.sponsors {
+  background-color: white;
+  height: auto;
+  overflow: hidden;
+  padding: 25px;
+  background-color: red;
+}
+.sponsors__owl-carousel {
+  background-color: blue;
+}
+
+.reviews {
+  background-color: blue;
+}
+.reviews__container {
+  display: flex;
+  justify-content: center;
+}
+.reviews__card {
+  width: 350px;
+  background: #D3DCE7;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.reviews__card__text {
+  /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+  display: flex;
+  align-items: center;
+  color: #486284;
+}
+.reviews__card__header {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews__card__header__number {
+  padding-top: 10px;
+  /* 4.5 */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #486284;
+}
+.reviews__card__header-profile {
+  display: flex;
+}
+.reviews__card__header-profile-picture {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.reviews__card__header-names {
+  padding-top: 5px;
+}
+.reviews__card__header-names-title {
+  /* Viezh Robert */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #486284;
+}
+.reviews__card__header-names-subtitle {
+  /* Warsaw, Poland */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #486284;
+}
+.reviews #carouselExampleDark1 {
+  height: 458px;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+}
+.reviews .container-btn {
+  display: flex;
+  justify-content: start;
+}
+.reviews .carousel-indicators-review {
+  display: flex;
+  justify-content: start !important;
+}
+
+.howtorent {
+  padding: 86px 0px;
+  text-align: center;
+}
+.howtorent__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  /* or 72px */
+  letter-spacing: -0.02em;
+  color: #486284;
+}
+.howtorent__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* Black */
+  color: #1A202C;
+  /* Rectangle 23792 */
+}
+.howtorent__information {
+  display: flex;
+  margin-top: 75px;
+}
+.howtorent__information__img {
+  width: 566px;
+  height: 528px;
+  background-image: url("../../../byfreedom/build/img/drive.png");
+  background-position: center;
+  background-size: contain;
+}
+.howtorent__information__items {
+  display: flex;
+  margin-bottom: 25px;
+}
+.howtorent__information__items-texts-title {
+  /* Llená el formulario */
+  padding: 0px 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  /* Black */
+  color: #1A202C;
+}
+.howtorent__information__items-texts-subtitle {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+  padding: 0px 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  /* or 28px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  text-align: start;
+  /* Black */
+  color: #1A202C;
+}
+.howtorent__btn {
+  /* Style=Filled */
+  margin-top: 71px;
+  box-sizing: border-box;
+  /* Auto layout */
+  /* Do something */
+  /* body/small */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  /* Neutral/0 */
+  color: #FFFFFF;
+  padding: 12px 20px;
+  gap: 10px;
+  /* Neutral/10 */
+  background: #486284;
+  /* Neutral/10 */
+  border: 1px solid #486284;
+  border-radius: 50px;
+}
+
+/* Rectangle 265 */
