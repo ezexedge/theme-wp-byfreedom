@@ -21,7 +21,7 @@ Este proyecto utiliza Gulp para automatizar tareas de desarrollo en tu instalaci
 Verifica la versión de Node.js para asegurarte de que estás usando una versión compatible con el proyecto:
 
 
-###Paso 2: Configurar la URL de WordPress
+### Paso 2: Configurar la URL de WordPress
 Asegúrate de tener un servidor Apache local configurado y una instalación de WordPress en funcionamiento.
 
 Obtén la URL de tu instalación local de WordPress.
@@ -32,7 +32,7 @@ Ve a la línea 23 y reemplaza la URL existente con la URL de tu instalación loc
    
    "const siteUrl = 'http://tu-wordpress-local.com';"
 
-###Paso 3: Ejecutar Gulp
+### Paso 3: Ejecutar Gulp
  Una vez configurada la URL, puedes ejecutar Gulp para comenzar a automatizar tareas de desarrollo:
 
 
