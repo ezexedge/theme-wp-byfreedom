@@ -15,8 +15,8 @@ Este proyecto utiliza Gulp para automatizar tareas de desarrollo en tu instalaci
 1. Abre una terminal en el directorio del proyecto.
 2. Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
-   ```sh
-   npm install
+   
+   "npm install"
 
 Verifica la versión de Node.js para asegurarte de que estás usando una versión compatible con el proyecto:
 
@@ -30,13 +30,13 @@ Abre el archivo gulpfile.js en el editor de tu preferencia.
 
 Ve a la línea 23 y reemplaza la URL existente con la URL de tu instalación local de WordPress. Debería verse algo así:
    
-   const siteUrl = 'http://tu-wordpress-local.com';
+   "const siteUrl = 'http://tu-wordpress-local.com';"
 
 ###Paso 3: Ejecutar Gulp
  Una vez configurada la URL, puedes ejecutar Gulp para comenzar a automatizar tareas de desarrollo:
 
 
-gulp dev
+"gulp dev"
 
 
 Esto configurará Gulp para que comience a observar cambios en tus archivos y realizar tareas automatizadas como recargar el navegador, compilar CSS/Sass, entre otros.
