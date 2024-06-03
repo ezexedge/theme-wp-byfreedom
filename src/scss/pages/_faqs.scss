@@ -1,0 +1,269 @@
+.question{
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+    
+    &__line{
+    align-items: center;
+text-align: center;
+margin: auto;
+background-color: white;
+width: 100%;
+margin-top: 20px;
+margin-bottom: 25px;
+    }
+    &__title{
+/* ¿Por qué Rentar? */
+align-items: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+        font-family: 'Plus Jakarta Sans';
+/* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+
+/* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+
+
+
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+align-items: center;
+
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+.negrita{
+    font-weight: 700;
+}
+
+
+    }
+
+    &__information{
+        display: flex;
+        justify-content: center;
+        margin-top: 122px;
+
+
+.accordion {
+    background: #FFFFFF;
+    border: 1.5px solid #F5F6F7;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    /* Subheading/02 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px!important;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: -0.012em;
+    color: #644EFA;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+
+}
+
+
+
+.accordion:after {
+    content:  url("../../../byfreedom/build/img/plus.png");
+    color: #777;
+    font-weight: 700;
+    float: right;
+    margin-left: 5px;
+    
+}
+
+.active:after {
+    content:  url("../../../byfreedom/build/img/plus.png");
+}
+
+.panel-container {
+    padding: 20px 20px; /* Agrega el padding al contenedor */
+    display: flex;
+    flex-direction: column;
+    svg{
+        cursor: pointer;
+        align-self: flex-end;
+    }
+}
+
+.panel {
+    background-color: #F5F5F5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+}
+    }
+}
+
+@media (max-width: 535px) {
+    .question{
+        background-color: #FFFFFF;
+        padding: 86px 0px;
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+    
+    
+    
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+    
+        &__information{
+            display: flex;
+            justify-content: center;
+            margin-top: 122px;
+    
+    
+    .accordion {
+        background: #FFFFFF;
+        border: 1.5px solid #F5F6F7;
+        border-radius: 16px;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        /* Subheading/02 */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px!important;
+        line-height: 28px;
+        /* identical to box height, or 140% */
+        letter-spacing: -0.012em;
+        color: #644EFA;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    
+    .accordion:after {
+        content:  url("../../../byfreedom/build/img/plus.png");
+        color: #777;
+        font-weight: 700;
+        float: right;
+        margin-left: 5px;
+        
+    }
+    
+    .active:after {
+        content:  url("../../../byfreedom/build/img/plus.png");
+    }
+    
+    .panel-container {
+        padding: 20px 20px; /* Agrega el padding al contenedor */
+        display: flex;
+        flex-direction: column;
+        svg{
+            cursor: pointer;
+            align-self: flex-end;
+        }
+    }
+    
+    .panel {
+        background-color: #F5F5F5;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    
+    }
+        }
+    }
+
+}
+

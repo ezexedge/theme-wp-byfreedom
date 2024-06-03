@@ -1,0 +1,360 @@
+@use '../fonts' as *;
+
+.contact {
+  background-color: #FFFFFF;
+  padding: 86px 0;
+
+  &__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    /* Contactanos */
+    /* Display lg / Bold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px !important;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    /* Neutral/900 */
+    color: #111827;
+    text-align: center;
+  }
+
+  &__subtitle {
+    /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    font-feature-settings: 'liga' off;
+    /* Neutral/900 */
+    color: #111827;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  &__information {
+    overflow: hidden;
+
+    &__form {
+      padding: 60px 0;
+      padding-left: 60px;
+
+      textarea {
+        /* Input Field */
+        margin-top: 30px;
+        box-sizing: border-box;
+        /* Gray/00 */
+        background: #FFFFFF;
+        /* Gray/100 */
+        border: 1px solid #E6E8EC;
+        border-radius: 5px;
+      }
+
+      &-select {
+        /* Input Field */
+        height: 48px !important;
+        /* Gray/00 */
+        background: #FFFFFF !important;
+        /* Gray/100 */
+        border: 1px solid #E6E8EC !important;
+        border-radius: 5px !important;
+        width: 100% !important;
+      }
+
+      &-btn {
+        /* Button */
+        /* Auto layout */
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 32px;
+        width: 235px;
+        /* Primary/500 */
+        background: #0B63E5;
+        border-radius: 7px;
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h3 {
+          /* Button/Regular */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px !important;
+          /* identical to box height, or 300% */
+          text-transform: capitalize;
+          margin-right: 8px;
+          /* Gray/00 */
+          color: #FFFFFF !important;
+        }
+
+        svg {
+          margin-top: -7px;
+        }
+      }
+
+      &-text {
+        /* ¿En servicio estás interesado? */
+        h3 {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px !important;
+          /* identical to box height, or 143% */
+          /* Gray/900 */
+          color: red;
+        }
+      }
+
+      &-input {
+        /* Input Field */
+        box-sizing: border-box;
+        height: 48px !important;
+        /* Gray/00 */
+        background: #FFFFFF;
+        border: 1px solid #E6E8EC !important;
+        border-radius: 5px !important;
+      }
+
+      h3 {
+        /* Envianos un mensaje a través del siguiente formulaio */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 44px;
+        /* or 122% */
+        letter-spacing: -0.02em;
+        color: #000000;
+      }
+    }
+
+    &__data {
+      background: #644EFA;
+      border-radius: 24px 0 0 24px;
+      padding: 60px 0;
+      padding-left: 60px;
+
+      &-text {
+        h3 {
+          /* Nuestros canales de comunicación */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 31px;
+          line-height: 44px;
+          /* or 122% */
+          letter-spacing: -0.02em;
+          /* Gray/00 */
+          color: #FFFFFF;
+          margin-bottom: 20px;
+        }
+
+        p {
+          /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          /* or 156% */
+          align-items: center;
+          font-feature-settings: 'liga' off;
+          color: #FFFFFF;
+          margin-bottom: 60px;
+        }
+      }
+
+      &-text-small {
+        /* E-mail */
+        h3 {
+          /* CAPTION/02 */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          /* identical to box height, or 14px */
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          /* Gray/00 */
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
+
+        p {
+          /* hola@byfreedom.com */
+          /* Body/Xtra Large/400 */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px !important;
+          line-height: 28px;
+          /* identical to box height, or 140% */
+          color: #FFFFFF;
+        }
+      }
+
+      &-text-redes {
+        h3 {
+          /* REDES SOCIALES */
+          /* CAPTION/02 */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          /* identical to box height, or 14px */
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          /* Gray/00 */
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
+
+        p {
+          /* Instragram Facebook Twitter */
+          /* Body/Xtra Large/400 */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          /* identical to box height, or 140% */
+          /* Gray/00 */
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 60px 0;
+    &__title {
+      font-size: 36px !important;
+      line-height: 48px;
+    }
+    &__subtitle {
+      font-size: 16px !important;
+      line-height: 24px;
+      margin-bottom: 60px;
+    }
+    &__information {
+      &__form {
+        padding-left: 30px;
+        &-btn {
+          width: 100%;
+        }
+      }
+      &__data {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .contact {
+    padding: 40px 0;
+    &__title {
+ 
+    }
+    &__subtitle {
+
+    }
+    &__information {
+        &__data{
+            border-radius: 24px!important;
+            text-align: center;
+            padding-left: 0px;
+            padding: 40px 30px;
+        }
+      &__form {
+        text-align: center;
+        padding-left: 0px;
+        padding: 40px!important;
+        margin-top: 40px !important;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px 0;
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+    &__information {
+        &__data{
+            border-radius: 24px!important;
+            text-align: center;
+            padding-left: 0px;
+            padding: 40px 30px;
+        }
+        &__form {
+            text-align: center;
+            padding-left: 0px;
+            padding: 40px!important;
+            margin-top: 40px !important;
+    
+          }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .contact {
+    padding: 10px 0;
+    
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+    &__information {
+        &__data{
+            border-radius: 24px!important;
+            text-align: center;
+            padding-left: 0px;
+            padding: 40px 30px;
+        }
+        &__form {
+            text-align: center;
+            padding-left: 0px;
+            padding: 40px!important;
+            margin-top: 40px !important;
+    
+          }
+    }
+  }
+}

@@ -1,7 +1,126 @@
 @charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .middle {
   margin-left: 30px;
   margin-right: 30px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+nav {
+  background-color: #FFFFFF !important;
+}
+nav ul {
+  align-items: center;
+}
+nav ul li {
+  /* Rent a Car */
+}
+nav ul li a {
+  /* Rent a Car */
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 171% */
+  text-align: center;
+  letter-spacing: 0.5px !important;
+  color: #111827 !important;
+  margin-left: 35px !important;
+}
+nav ul li button {
+  margin-left: 35px;
+  /* Button */
+  /* Auto layout */
+  align-items: center !important;
+  padding: 0px !important;
+  width: 148px !important;
+  height: 56px !important;
+  background: #644EFA !important;
+  border-radius: 8px !important;
+  border: 1px solid #644EFA !important;
+  /* Label */
+  /* Body md/SemiBold */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  /* White */
+  color: #FFFFFF;
+}
+
+.nav-select {
+  color: #644EFA !important;
 }
 
 .carousel-inner {
@@ -28,7 +147,7 @@
 }
 
 .carousel .carousel-indicators .active {
-  background-color: #1A202C !important; /* Color de fondo del indicador activo */
+  background-color: #644EFA !important; /* Color de fondo del indicador activo */
   width: 45px; /* Ancho del indicador */
   height: 15px; /* Altura del indicador */
   border-radius: 10px; /* Radio de los bordes (la mitad de la altura) */
@@ -39,227 +158,2122 @@
   border-top: 0px !important;
 }
 
-.header {
-  display: flex;
-  align-items: center;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
 }
-.header__img {
-  align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
-  max-width: 500px;
-  height: 523px;
-  background-image: url("../../../byfreedom/build/img/header.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
 }
-.header__text {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
 }
-.header__text-start {
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
   font-weight: 500;
-  font-size: 21px;
-  font-style: normal;
-  line-height: 22px;
-  /* identical to box height, or 105% */
-  letter-spacing: 0.15px;
-  /* Neutral/10 */
-  color: #486284;
 }
-.header__text-title {
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.contact {
+  background-color: #FFFFFF;
+  padding: 86px 0;
+}
+.contact__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.contact__title {
+  /* Contactanos */
+  /* Display lg / Bold */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 48px !important;
   line-height: 60px;
-  /* or 120% */
-  letter-spacing: 0.15px;
-  /* Neutral/10 */
-  color: #486284;
+  /* identical to box height, or 125% */
+  align-items: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+  text-align: center;
 }
-.header__text-subtitle {
+.contact__subtitle {
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  /* Body lg / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.contact__information {
+  overflow: hidden;
+}
+.contact__information__form {
+  padding: 60px 0;
+  padding-left: 60px;
+}
+.contact__information__form textarea {
+  /* Input Field */
+  margin-top: 30px;
+  box-sizing: border-box;
+  /* Gray/00 */
+  background: #FFFFFF;
+  /* Gray/100 */
+  border: 1px solid #E6E8EC;
+  border-radius: 5px;
+}
+.contact__information__form-select {
+  /* Input Field */
+  height: 48px !important;
+  /* Gray/00 */
+  background: #FFFFFF !important;
+  /* Gray/100 */
+  border: 1px solid #E6E8EC !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+}
+.contact__information__form-btn {
+  /* Button */
+  /* Auto layout */
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  width: 235px;
+  /* Primary/500 */
+  background: #0B63E5;
+  border-radius: 7px;
+}
+.contact__information__form-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__information__form-btn h3 {
+  /* Button/Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px !important;
+  /* identical to box height, or 300% */
+  text-transform: capitalize;
+  margin-right: 8px;
+  /* Gray/00 */
+  color: #FFFFFF !important;
+}
+.contact__information__form-btn svg {
+  margin-top: -7px;
+}
+.contact__information__form-text {
+  /* ¿En servicio estás interesado? */
+}
+.contact__information__form-text h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  /* identical to box height, or 143% */
+  /* Gray/900 */
+  color: red;
+}
+.contact__information__form-input {
+  /* Input Field */
+  box-sizing: border-box;
+  height: 48px !important;
+  /* Gray/00 */
+  background: #FFFFFF;
+  border: 1px solid #E6E8EC !important;
+  border-radius: 5px !important;
+}
+.contact__information__form h3 {
+  /* Envianos un mensaje a través del siguiente formulaio */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 44px;
+  /* or 122% */
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.contact__information__data {
+  background: #644EFA;
+  border-radius: 24px 0 0 24px;
+  padding: 60px 0;
+  padding-left: 60px;
+}
+.contact__information__data-text h3 {
+  /* Nuestros canales de comunicación */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 44px;
+  /* or 122% */
+  letter-spacing: -0.02em;
+  /* Gray/00 */
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.contact__information__data-text p {
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
+  font-feature-settings: "liga" off;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.contact__information__data-text-small {
+  /* E-mail */
+}
+.contact__information__data-text-small h3 {
+  /* CAPTION/02 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  /* Gray/00 */
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.contact__information__data-text-small p {
+  /* hola@byfreedom.com */
+  /* Body/Xtra Large/400 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  color: #FFFFFF;
+}
+.contact__information__data-text-redes h3 {
+  /* REDES SOCIALES */
+  /* CAPTION/02 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  /* Gray/00 */
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.contact__information__data-text-redes p {
+  /* Instragram Facebook Twitter */
+  /* Body/Xtra Large/400 */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
-  /* or 160% */
-  letter-spacing: 0.5px;
-  color: #8CA2C0;
-}
-.header__text__btn {
-  display: flex;
-}
-.header__text__btn-conducir {
-  /* Style=Filled */
-  box-sizing: border-box;
-  margin-right: 25px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px;
-  gap: 10px;
-  width: 170px;
-  height: 48px;
-  /* Neutral/10 */
-  background: #486284;
-  /* Neutral/10 */
-  border: 1px solid #486284;
-  border-radius: 50px;
-  /* Do something */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  letter-spacing: 0.5px;
-  /* Neutral/0 */
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  /* Gray/00 */
   color: #FFFFFF;
 }
-.header__text__btn-informacion {
-  /* Style=Outlined */
-  box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px;
-  gap: 10px;
-  width: 170px;
-  height: 48px;
-  /* Neutral/10 */
-  border: 1px solid #486284;
-  border-radius: 50px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  letter-spacing: 0.5px;
-  /* Neutral/10 */
-  color: #486284;
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 60px 0;
+  }
+  .contact__title {
+    font-size: 36px !important;
+    line-height: 48px;
+  }
+  .contact__subtitle {
+    font-size: 16px !important;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+  .contact__information__form {
+    padding-left: 30px;
+  }
+  .contact__information__form-btn {
+    width: 100%;
+  }
+  .contact__information__data {
+    padding-left: 30px;
+  }
 }
-.header__text__logo {
-  /* Trusted by: */
-  margin-top: 26px;
-  display: flex;
-  /* subtitle/small */
-  font-style: normal;
+@media (max-width: 760px) {
+  .contact {
+    padding: 40px 0;
+  }
+  .contact__information__data {
+    border-radius: 24px !important;
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px 30px;
+  }
+  .contact__information__form {
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px !important;
+    margin-top: 40px !important;
+  }
+}
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px 0;
+  }
+  .contact__information__data {
+    border-radius: 24px !important;
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px 30px;
+  }
+  .contact__information__form {
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px !important;
+    margin-top: 40px !important;
+  }
+}
+@media (max-width: 370px) {
+  .contact {
+    padding: 10px 0;
+  }
+  .contact__information__data {
+    border-radius: 24px !important;
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px 30px;
+  }
+  .contact__information__form {
+    text-align: center;
+    padding-left: 0px;
+    padding: 40px !important;
+    margin-top: 40px !important;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
   font-weight: 500;
-  font-size: 21px;
-  line-height: 22px;
-  /* or 105% */
-  letter-spacing: 0.15px;
-  /* Neutral/6 */
-  color: #9CB0C9;
 }
-.header__text__logo-img {
-  background-image: url("../../../byfreedom/build/img/cabify.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 114px;
-  height: 38px;
-  margin-left: 15px;
-  background-position: top top;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+/* image 4 */
+.sponsors {
+  background-color: white;
+  overflow: hidden;
+}
+.sponsors__owl-carousel {
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  /* Divider */
+  display: flex !important;
+  margin-bottom: 50px;
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+.sponsors__owl-carousel .item {
+  height: 200px;
+  display: flex !important;
+  align-items: center !important;
+}
+.sponsors__owl-carousel .item img {
+  height: 35px;
+}
+.sponsors__owl-carousel .item-3 {
+  margin: 0px 20px !important;
+}
+.sponsors__owl-carousel .item-3 img {
+  height: 20px !important;
+}
+.sponsors__owl-carousel .item-4 {
+  margin: 0px 20px !important;
+}
+.sponsors__owl-carousel .item-1 {
+  margin: 0px 0px !important;
+}
+.sponsors__owl-carousel .item-1 img {
+  margin-bottom: 5px;
+}
+.sponsors__owl-carousel .item-2 {
+  margin: 0px 0px !important;
+}
+.sponsors__owl-carousel .item-2 img {
+  margin-bottom: 5px;
 }
 
-.rent {
-  background-color: #EEEEEE;
+/* Rectangle 265 */
+.team {
+  background-color: #FFFFFF;
   padding: 86px 0px;
+  margin-top: 100px;
 }
-.rent__title {
-  /* ¿Por qué rentar? */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 150%;
+.team__line {
   align-items: center;
-  letter-spacing: -0.02em;
-  color: #486284;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
-.rent__subtitle {
+.team__title {
+  /* ¿Por qué Rentar? */
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.team__subtitle {
   /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  /* Body lg / Regular */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
+  line-height: 28px;
+  /* or 156% */
   align-items: center;
-  text-align: center;
-  /* Black */
-  color: #1A202C;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
 }
-.rent__information {
-  margin-top: 75px;
+.team .rent-middle {
+  margin-left: 36px;
+  margin-right: 36px;
 }
-.rent__information__item {
+.team__information {
+  margin-top: 140px;
+}
+.team__information-card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
-.rent__information__item-logo {
-  text-align: center;
-  margin-bottom: 30px;
+.team__information-card svg {
+  margin-bottom: 26px;
 }
-.rent__information__item-text {
-  padding: 0px 35px;
-}
-.rent__information__item-text-title {
-  margin-bottom: 10px;
-  /* Choose Location */
+.team__information-card h3 {
+  /* Darrell Steward */
+  /* Body/Xtra Large/500 */
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 150%;
-  /* identical to box height, or 36px */
-  letter-spacing: -0.02em;
-  /* Black */
-  color: #1A202C;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  text-align: center;
+  /* Gray/900 */
+  color: #061C3D;
 }
-.rent__information__item-text-text {
-  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+.team__information-card p {
+  /* CEO & Founder of Gilio */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  /* Gray/600 */
+  color: #6A778B;
+}
+
+.middle-card {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-control::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Gray/500 */
+  color: #838E9E;
+}
+
+/* Gmail */
+.form-select {
+  width: 300px;
+}
+
+.form-select {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Gray/500 */
+  color: #838E9E !important;
+}
+
+.no {
+  margin-left: 15px;
+}
+
+.patter-top {
+  top: -60px;
+}
+
+.pattern {
+  z-index: 10000;
+  position: relative;
+  height: auto;
+}
+.pattern .left {
+  z-index: 3;
+  position: absolute;
+  bottom: -60;
+  left: 0;
+}
+.pattern .right {
+  z-index: 3;
+  position: absolute;
+  bottom: -40;
+  right: 0;
+}
+
+.rect {
+  position: absolute;
+}
+
+.rect1 {
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  top: 87px;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  align-items: center;
+}
+.rect1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
   line-height: 175%;
-  /* or 24px */
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect2 {
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  top: 343px;
+  left: 0;
+  display: flex;
+  justify-content: end;
+}
+.rect2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect3 {
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  left: 388px;
+  display: flex;
+  justify-content: start;
+  top: 173px;
+}
+.rect3 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect4 {
+  top: 259px;
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  left: 388px;
+  display: flex;
+  justify-content: start;
+}
+.rect4 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect5 {
+  top: 343px;
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  left: 388px;
+  display: flex;
+  justify-content: start;
+}
+.rect5 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect6 {
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  top: 87px;
+  left: 388px;
+  display: flex;
+  justify-content: start;
+}
+.rect6 p {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect7 {
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  top: 173px;
+  left: 0;
+  display: flex;
+  justify-content: end;
+}
+.rect7 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect8 {
+  width: 234px;
+  height: 74px;
+  top: 259px;
+  left: 0;
+  width: 234px;
+  height: 74px;
+  background-color: #CAD7FD;
+  left: 0;
+  display: flex;
+  justify-content: end;
+}
+.rect8 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 175%;
+  /* or 61px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.rect9 {
+  width: 154px;
+  height: 336px;
+  background-color: white;
+  top: 84px;
+  left: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rect10 {
+  width: 154px;
+  height: 84px;
+  background-color: #644EFA;
+  bottom: 0;
+  left: 234px;
+  justify-content: space-evenly;
+  display: flex;
+}
+.rect10 h1 {
+  /* VS. */
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 23px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.top {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  top: -153px;
+}
+
+.rect1-child {
+  min-width: 0px;
+  height: 74px;
+  background-color: #644EFA;
+}
+
+.rect2-child {
+  width: 115px;
+  height: 74px;
+  background-color: #644EFA;
+}
+
+.rect6-child {
+  width: 234px;
+  height: 74px;
+  background-color: #644EFA;
+}
+
+.rect3-child, .rect4-child, .rect5-child {
+  width: 234px;
+  height: 74px;
+  background-color: #644EFA;
+}
+
+.rect7-child, .rect8-child {
+  width: 234px;
+  height: 74px;
+  background-color: #644EFA;
+}
+
+.increase__information__img {
+  display: flex;
+  flex-direction: column; /* Cambia a row si deseas que estén alineados horizontalmente */
+  align-items: flex-start; /* Alinea todos los elementos al inicio (izquierda) */
+}
+
+.increase__information__img .rect,
+.increase__information__img .img-logo {
+  align-self: flex-start; /* Asegura que cada elemento esté alineado al inicio (izquierda) */
+}
+
+.rect-top-svg-1 {
+  align-self: end !important;
+}
+
+.rect-top-svg-2 {
+  align-self: end !important;
+}
+.rect-top-svg-2 img {
+  width: 202px;
+  height: 236px;
+  padding-bottom: 15px;
+}
+
+.rect9 h4 {
+  /* RENTABILIDAD */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* or 153% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 0.2 !important;
   /* Black */
   color: #1A202C;
 }
 
+.rect9-1 {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rect9-2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rect9-3 {
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rect9-4 {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -10px;
+}
+
+.invertir-main {
+  margin-top: 120px;
+}
+
+.question {
+  background-color: #FFFFFF;
+  padding: 86px 0px;
+}
+.question__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.question__title {
+  /* ¿Por qué Rentar? */
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.question__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  /* Body lg / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.question__subtitle .negrita {
+  font-weight: 700;
+}
+.question__information {
+  display: flex;
+  justify-content: center;
+  margin-top: 122px;
+}
+.question__information .accordion {
+  background: #FFFFFF;
+  border: 1.5px solid #F5F6F7;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  /* Subheading/02 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px !important;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  letter-spacing: -0.012em;
+  color: #644EFA;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.question__information .accordion:after {
+  content: url("../../../byfreedom/build/img/plus.png");
+  color: #777;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+.question__information .active:after {
+  content: url("../../../byfreedom/build/img/plus.png");
+}
+.question__information .panel-container {
+  padding: 20px 20px; /* Agrega el padding al contenedor */
+  display: flex;
+  flex-direction: column;
+}
+.question__information .panel-container svg {
+  cursor: pointer;
+  align-self: flex-end;
+}
+.question__information .panel {
+  background-color: #F5F5F5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+@media (max-width: 535px) {
+  .question {
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+  }
+  .question__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .question__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .question__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .question__subtitle .negrita {
+    font-weight: 700;
+  }
+  .question__information {
+    display: flex;
+    justify-content: center;
+    margin-top: 122px;
+  }
+  .question__information .accordion {
+    background: #FFFFFF;
+    border: 1.5px solid #F5F6F7;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    /* Subheading/02 */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: -0.012em;
+    color: #644EFA;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question__information .accordion:after {
+    content: url("../../../byfreedom/build/img/plus.png");
+    color: #777;
+    font-weight: 700;
+    float: right;
+    margin-left: 5px;
+  }
+  .question__information .active:after {
+    content: url("../../../byfreedom/build/img/plus.png");
+  }
+  .question__information .panel-container {
+    padding: 20px 20px; /* Agrega el padding al contenedor */
+    display: flex;
+    flex-direction: column;
+  }
+  .question__information .panel-container svg {
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .question__information .panel {
+    background-color: #F5F5F5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.footer {
+  /* Footer */
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: #648AFA;
+}
+.footer__redes-logos {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.footer__redes-logos svg {
+  margin-right: 21px;
+}
+.footer__redes-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  /* Our vision is to provide convenience and help increase your sales business. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.footer__info h1 {
+  /* La Empresa */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-bottom: 40px;
+}
+.footer__info ul {
+  list-style: none;
+}
+.footer__info ul li {
+  margin: 30px -32px;
+  /* ¿Por qué rentar? ¿Como invertir? FAQ´s */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+.footer__info ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  letter-spacing: -0.02em;
+}
+.footer__bottom {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  /* ©2024 By Freedom. All rights reserved */
+  /* Semibold/Type@16 */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.last {
+  display: flex;
+}
+.last__text {
+  margin-right: 25px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .footer__redes-logos {
+    justify-content: center;
+  }
+  .footer__redes-logos svg {
+    margin-right: 15px;
+  }
+  .footer__redes-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer__info h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .footer__info ul li {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .footer__bottom {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .last {
+    flex-direction: column;
+    align-items: center;
+  }
+  .last__text {
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 370px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .footer__redes-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__redes-logos svg {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer__redes-text {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .footer__info h1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer__info ul li {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .footer__bottom {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .last__text {
+    margin-bottom: 5px;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.characteristics {
+  background-color: #FFFFFF;
+  padding: 86px 0px 120px 0px;
+}
+.characteristics__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.characteristics__title {
+  /* ¿Por qué Rentar? */
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.characteristics__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+  margin-bottom: 100px;
+  text-align: center;
+  /* Body lg / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  /* or 156% */
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.characteristics__subtitle .negrita {
+  font-weight: 700;
+}
+.characteristics__information {
+  display: flex;
+}
+.characteristics__information__items {
+  display: flex;
+  margin-bottom: 35px;
+  padding-top: 34px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  max-width: 540px;
+  /* Creative design */
+  /* White */
+  background: #FFFFFF;
+  /* Effect-1 */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.characteristics__information__items-logo {
+  margin-top: 1px;
+  margin-right: 20px;
+}
+.characteristics__information__items-texts-title {
+  /* Llená el formulario */
+  /* COMPLETÁ EL FORMULARIO */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  text-transform: uppercase;
+  /* Black */
+  color: #232233;
+}
+.characteristics__information__items-texts-subtitle {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+  font-family: "Inter";
+  font-style: normal;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  /* Gray ( Paragraph )  */
+  color: #6C6C72;
+}
+
+@media (max-width: 1197px) {
+  .characteristics {
+    background-color: #FFFFFF;
+    padding: 86px 0px 120px 0px;
+  }
+  .characteristics__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .characteristics__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle .negrita {
+    font-weight: 700;
+  }
+  .characteristics__information {
+    display: flex;
+  }
+  .characteristics__information__items {
+    display: flex;
+    margin-bottom: 35px;
+    padding-top: 34px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    max-width: 430px !important;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .characteristics__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .characteristics__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .characteristics__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+}
+@media (max-width: 991px) {
+  .characteristics {
+    background-color: #FFFFFF;
+    padding: 86px 0px 120px 0px;
+  }
+  .characteristics__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .characteristics__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle .negrita {
+    font-weight: 700;
+  }
+  .characteristics__information {
+    display: flex;
+  }
+  .characteristics__information__items {
+    display: flex;
+    margin-bottom: 35px;
+    padding-top: 34px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    max-width: 328px !important;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .characteristics__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .characteristics__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .characteristics__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+}
+@media (max-width: 771px) {
+  .characteristics {
+    background-color: #FFFFFF;
+    padding: 86px 0px 120px 0px;
+  }
+  .characteristics__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .characteristics__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle .negrita {
+    font-weight: 700;
+  }
+  .characteristics__information {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .characteristics__information__items {
+    display: flex;
+    margin-bottom: 35px;
+    padding-top: 34px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    min-width: 540px !important;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .characteristics__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .characteristics__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .characteristics__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+}
+@media (max-width: 728px) {
+  .characteristics {
+    background-color: #FFFFFF;
+    padding: 86px 0px 120px 0px;
+  }
+  .characteristics__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .characteristics__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .characteristics__subtitle .negrita {
+    font-weight: 700;
+  }
+  .characteristics__information {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .characteristics__information__items {
+    display: flex;
+    margin-bottom: 35px;
+    padding-top: 34px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    min-width: 100% !important;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .characteristics__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .characteristics__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .characteristics__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
 .invest {
   padding: 86px 0px;
   text-align: center;
+  z-index: 10000;
+  position: relative;
+  height: auto;
+  background-color: #644EFA;
+}
+.invest .svg {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.invest__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: #644EFA;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .invest__title {
-  text-align: center;
+  /* ¿Por qué invertir en ByFreedom? */
+  /* Display lg / Bold */
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 48px;
-  line-height: 150%;
-  /* or 72px */
-  letter-spacing: -0.02em;
-  color: #486284;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  align-items: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  color: #FFFFFF;
 }
 .invest__subtitle {
   /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  /* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+  /* Body lg / Regular */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
-  /* Black */
-  color: #1A202C;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #FFFFFF;
 }
 .invest__information {
   margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.invest__information__card {
+  /* Feature Card */
+  width: 260px;
+  height: 148px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.invest__information__card-number {
+  /* Number */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  color: #000000;
+}
+.invest__information__card-text {
+  /* Label */
+  /* Body md / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  margin-top: -8px;
+  color: #000000;
 }
 .invest__information__number h3 {
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 70px !important;
@@ -284,13 +2298,2208 @@
   /* Black */
   color: #1A202C;
 }
+.invest__information__heart {
+  position: relative;
+}
+.invest__information__heart img {
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
 .invest__btn {
+  /* _Button base */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+  width: 160px;
+  height: 56px;
+  border-radius: 8px;
+  /* Button */
+  background: #648AFA;
+  border: 0px transparent;
+  /* Label */
+  /* Body md/SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  /* White */
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+@media (max-width: 1204px) {
+  .invest {
+    padding: 86px 0px;
+    text-align: center;
+    z-index: 10000;
+    position: relative;
+    height: auto;
+    background-color: #644EFA;
+  }
+  .invest .svg {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .invest__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #644EFA;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .invest__title {
+    /* ¿Por qué invertir en ByFreedom? */
+    /* Display lg / Bold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    color: #FFFFFF;
+  }
+  .invest__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: "liga" off;
+    color: #FFFFFF;
+  }
+  .invest__information {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .invest__information__card {
+    /* Feature Card */
+    height: 148px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .invest__information__card-number {
+    /* Number */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    color: #000000;
+  }
+  .invest__information__card-text {
+    /* Label */
+    /* Body md / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    margin-top: -8px;
+    color: #000000;
+  }
+  .invest__information__number h3 {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px !important;
+    /* or 122px */
+    text-align: center;
+    color: #000000;
+  }
+  .invest__information__text {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    padding: 0px 35px;
+  }
+  .invest__information__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Black */
+    color: #1A202C;
+  }
+  .invest__information__heart {
+    position: relative;
+  }
+  .invest__information__heart img {
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
+  .invest__btn {
+    /* _Button base */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    height: 56px;
+    border-radius: 8px;
+    /* Button */
+    background: #648AFA;
+    border: 0px transparent;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    /* White */
+    color: #FFFFFF;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 572px) {
+  .invest {
+    padding: 86px 0px;
+    text-align: center;
+    z-index: 10000;
+    position: relative;
+    height: auto;
+    background-color: #644EFA;
+  }
+  .invest .svg {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .invest__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #644EFA;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .invest__title {
+    /* ¿Por qué invertir en ByFreedom? */
+    /* Display lg / Bold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    color: #FFFFFF;
+  }
+  .invest__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: "liga" off;
+    color: #FFFFFF;
+  }
+  .invest__information {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .invest__information div {
+    display: flex;
+    justify-content: center;
+  }
+  .invest__information__card {
+    /* Feature Card */
+    height: 148px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .invest__information__card-number {
+    /* Number */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    color: #000000;
+  }
+  .invest__information__card-text {
+    /* Label */
+    /* Body md / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    margin-top: -8px;
+    color: #000000;
+  }
+  .invest__information__number h3 {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px !important;
+    /* or 122px */
+    text-align: center;
+    color: #000000;
+  }
+  .invest__information__text {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    padding: 0px 35px;
+  }
+  .invest__information__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Black */
+    color: #1A202C;
+  }
+  .invest__information__heart {
+    position: relative;
+  }
+  .invest__information__heart img {
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
+  .invest__btn {
+    /* _Button base */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    width: 300px;
+    height: 56px;
+    border-radius: 8px;
+    /* Button */
+    background: #648AFA;
+    border: 0px transparent;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    /* White */
+    color: #FFFFFF;
+    margin-top: 30px;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.increase-text-2 {
+  display: none !important;
+}
+
+.increase {
+  background-color: #EDE9FE;
+  padding: 90px 0px 56px 0px;
+}
+.increase__information__text {
+  padding: 60px 0px 75px 0px;
+}
+.increase__information__text-title {
+  /* Potenciá tus ingresos con una automatización financiera y generá ingresos pasivos. */
+  /* Display lg / Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+  margin-bottom: 44px;
+}
+.increase__information__text-subtitle {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #1A202C;
+}
+.increase__information__img {
+  margin-top: 120px;
+  height: 400px; /* Ajustar altura */
+  width: auto; /* Ajustar ancho */
+  display: flex;
+  flex-direction: column; /* Cambia a row si deseas que estén alineados horizontalmente */
+  align-items: flex-start; /* Alinea todos los elementos al inicio (izquierda) */
+}
+.increase__information__img-logo {
+  width: 40vw; /* Ajustar ancho del logo */
+  height: auto; /* Mantener proporciones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 -40px;
+  transform: scale(0.8); /* Reducir tamaño del contenido */
+}
+
+@media (max-width: 1194px) {
+  .increase-text-2 {
+    display: block !important;
+  }
+  .increase-text-1 {
+    display: none !important;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: start;
+  margin: 50px 0px;
+}
+.header__img {
+  align-self: flex-start;
+}
+.header__img img {
+  width: 510px;
+  height: auto;
+}
+.header__img__url {
+  position: relative;
+}
+.header__img__url #svg1 {
+  z-index: 3;
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+}
+.header__img__url #svg1-conductor {
+  z-index: 3;
+  position: absolute;
+  top: 15%;
+  right: 23%;
+}
+.header__img__url #svg1-invertir {
+  z-index: 3;
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  width: 180px;
+}
+.header__img__url #svg2-invertir {
+  z-index: 3;
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  width: 180px;
+}
+.header__img__url #svg3-invertir {
+  z-index: 3;
+  position: absolute;
+  top: 28%;
+  left: 34%;
+  width: 180px;
+}
+.header__img__url #svg4-invertir {
+  z-index: 3;
+  position: absolute;
+  top: 48%;
+  left: 44%;
+  width: 180px;
+}
+.header__img__url #svg2 {
+  position: absolute;
+  top: 30%;
+  left: 19%;
+  width: 110px;
+}
+.header__img__url #svg3 {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 95px;
+}
+.header__img__url #svg4 {
+  position: absolute;
+  bottom: 0%;
+  left: 15%;
+  width: 120px;
+}
+.header__img__url #svg5 {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  width: 110px;
+}
+.header__img__url #svg2-conductor {
+  position: absolute;
+  top: 30%;
+  right: 38%;
+}
+.header__img__url #svg3-conductor {
+  position: absolute;
+  bottom: 40%;
+  left: 58%;
+}
+.header__img__url #svg4-conductor {
+  z-index: 3;
+  position: absolute;
+  top: 40%;
+  right: 11%;
+  width: 180px;
+}
+.header__img__url #svg5-conductor {
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  width: 180px;
+}
+.header__img__url #svg6-conductor {
+  z-index: 3;
+  position: absolute;
+  top: 15%;
+  left: -1%;
+  width: 180px;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+  margin-top: 90px;
+}
+.header__text-start {
+  font-weight: 500;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 22px;
+  /* identical to box height, or 105% */
+  letter-spacing: 0.15px;
+  /* Neutral/10 */
+  color: #486284;
+}
+.header__text-title {
+  /* ¿Querés trabajar con las app de transporte y aumentar tus ingresos? */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 62px;
+  /* or 113% */
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  color: #3E58A5;
+}
+.header__text-subtitle {
+  /* Encontrá el vehículo perfecto para vos. Tenemos modelos 2018 en adelante y 0km disponibles con planes diarios y semanales a tu medida. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+.header__text__btn {
+  display: flex;
+}
+.header__text__btn-conducir {
   /* Style=Filled */
-  margin-top: 35px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  /* Auto layout */
+  /* Button */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 175px;
+  height: 56px;
+  background: #644EFA;
+  border-radius: 8px;
+  /* Label */
+  border-color: #644EFA;
+  border: 0px;
+  /* Body md/SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  /* White */
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.header__text__btn-informacion {
+  /* Style=Outlined */
+  /* Button */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 209px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: white;
+  border: 0px;
+  /* Label */
+  /* Body md/SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #644EFA;
+}
+.header__text__btn-informacion svg {
+  margin: 0px 7px;
+}
+.header__text__logo {
+  /* Trusted by: */
+  margin-top: 89px;
+  display: flex;
+  /* subtitle/small */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 22px;
+  /* or 105% */
+  letter-spacing: 0.15px;
+  /* Neutral/6 */
+  color: #9CB0C9;
+}
+.header__text__logo-img {
+  background-image: url("../../../byfreedom/build/img/cabify.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 114px;
+  height: 38px;
+  margin-left: 15px;
+  background-position: center;
+  margin-top: -5px;
+}
+
+.invertir-header {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1204px) {
+  .carousel-indicators {
+    margin: -48px;
+  }
+  .pattern {
+    height: 170px !important;
+  }
+  .header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: start;
+    margin: 0px 0px;
+  }
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+    margin-top: 50px;
+  }
+  .header__img {
+    margin-top: 30px !important;
+  }
+  .carousel-inner {
+    height: auto !important;
+  }
+}
+@media (max-width: 980px) {
+  .pattern {
+    height: 170px !important;
+  }
+  .pattern .left {
+    width: 50%;
+  }
+  .pattern .right {
+    width: 50%;
+  }
+  .invertir-main {
+    margin-top: 55px !important;
+  }
+}
+@media (max-width: 770px) {
+  .pattern {
+    height: 150px !important;
+  }
+  .pattern .left {
+    width: 50%;
+  }
+  .pattern .right {
+    width: 50%;
+    margin-bottom: -16px !important;
+  }
+  .invertir-main {
+    margin-top: 40px !important;
+  }
+}
+@media (max-width: 600px) {
+  .pattern {
+    height: 150px !important;
+  }
+  .pattern .left {
+    width: 50%;
+  }
+  .pattern .right {
+    width: 50%;
+  }
+  .invertir-main {
+    margin-top: 30px !important;
+  }
+}
+@media (max-width: 513px) {
+  .pattern {
+    height: 150px !important;
+  }
+  .pattern .left {
+    width: 50%;
+  }
+  .pattern .right {
+    width: 50%;
+  }
+  .header__img img {
+    width: 420px !important;
+  }
+  .invertir-main {
+    margin-top: 25px !important;
+  }
+}
+@media (max-width: 433px) {
+  .pattern {
+    height: 150px !important;
+  }
+  .pattern .left {
+    width: 45%;
+  }
+  .pattern .right {
+    width: 45%;
+  }
+  .header__img img {
+    width: 350px !important;
+  }
+  .invertir-main {
+    margin-top: 20px !important;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.rent {
+  background-color: #FFFFFF;
+  padding: 86px 0px;
+  position: relative;
+  z-index: 2;
+}
+.rent__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.rent__title {
+  /* ¿Por qué Rentar? */
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.rent__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+  text-align: center;
+  /* Body lg / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.rent__subtitle .negrita {
+  font-weight: 700;
+}
+.rent .rent-middle {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.rent__information {
+  margin-top: 55px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.rent__information__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* Frame 4800 */
+  /* Auto layout */
+  padding: 0px;
+  gap: 20px;
+  background-color: #644EFA;
+  width: 350px;
+  height: 334px;
+  border-radius: 20px;
+}
+.rent__information__item-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.rent__information__item-text {
+  padding: 0px 35px;
+}
+.rent__information__item-text-title {
+  /* Cabify Partnership. Trabajá con seguridad */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 34px */
+  text-align: center;
+  color: #FFFFFF;
+}
+.rent__information__item-text-text {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 175%;
+  /* or 24px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  /* Black */
+  color: #1A202C;
+}
+
+@media (max-width: 1193px) {
+  .rent {
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+    position: relative;
+    z-index: 2;
+  }
+  .rent__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .rent__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .rent__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .rent__subtitle .negrita {
+    font-weight: 700;
+  }
+  .rent .rent-middle {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  .rent__information {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .rent__information__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* Frame 4800 */
+    /* Auto layout */
+    padding: 0px;
+    gap: 20px;
+    background-color: #644EFA;
+    width: 260px;
+    height: 334px;
+    border-radius: 20px;
+  }
+  .rent__information__item-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .rent__information__item-text {
+    padding: 0px 35px;
+  }
+  .rent__information__item-text-title {
+    /* Cabify Partnership. Trabajá con seguridad */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .rent__information__item-text-text {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Black */
+    color: #1A202C;
+  }
+}
+@media (max-width: 995px) {
+  .rent {
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+    position: relative;
+    z-index: 2;
+  }
+  .rent__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .rent__title {
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .rent__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    font-feature-settings: "liga" off;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .rent__subtitle .negrita {
+    font-weight: 700;
+  }
+  .rent .rent-middle {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  .rent__information {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .rent__information__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* Frame 4800 */
+    /* Auto layout */
+    padding: 0px;
+    gap: 20px;
+    background-color: #644EFA;
+    width: 350px;
+    height: 334px;
+    border-radius: 20px;
+  }
+  .rent__information__item-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .rent__information__item-text {
+    padding: 0px 35px;
+  }
+  .rent__information__item-text-title {
+    /* Cabify Partnership. Trabajá con seguridad */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .rent__information__item-text-text {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Black */
+    color: #1A202C;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.drive {
+  background: #FFFFFF !important;
+  padding: 50px 0px;
+  text-align: center;
+}
+.drive__line {
+  margin-top: 10px;
+}
+.drive__title {
+  /* ¿Qué vehículo voy a conducir? */
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  align-items: center;
+  /* Neutral/900 */
+  color: #111827;
+}
+.drive__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+  /* Black */
+  color: #1A202C;
+}
+.drive__card {
+  display: flex;
+  justify-content: center;
+}
+.drive__card__item {
+  /* Rectangle 21 */
+  padding: 20px 25px;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding-top: 15%;
+  margin-bottom: 50px;
+  /* White */
+  background: #FFFFFF;
+  /* Effect-1 */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.drive__card__item-image {
+  position: absolute;
+  top: -15%; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Para que la imagen esté encima del contenido */
+}
+.drive__card__item-title {
+  /* RENAULT LOGAN */
+}
+.drive__card__item-title h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31.25px;
+  line-height: 47px;
+  /* identical to box height, or 151% */
+  text-transform: uppercase;
+  /* Black */
+  color: #232233;
+}
+.drive__card__item-subtitle {
+  /* CARACTERÍSTICAS */
+}
+.drive__card__item-subtitle h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  text-transform: uppercase;
+  /* Gray ( Paragraph )  */
+  color: #6C6C72;
+}
+.drive__card__item-text {
+  /* Botón antipánico, GC, dirección hidráulica y aire acondicionado, sistema de audio con MP3, conectividad bluetooth, ABS, airbags delanteros. */
+}
+.drive__card__item-text h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 24px;
+  /* or 150% */
+  text-align: center;
+  /* Gray ( Paragraph )  */
+  color: #6C6C72;
+}
+.drive__card__item-logo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.drive__btn {
+  /* Style=Filled */
+  /* Button */
+  width: 172px;
+  height: 56px;
+  border: 0px #644EFA;
+  background: #644EFA;
+  border-radius: 8px;
+  /* Label */
+  /* Body md/SemiBold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  align-items: center;
+  /* White */
+  color: #FFFFFF;
+}
+
+@media (max-width: 1191px) {
+  .drive {
+    background: #FFFFFF !important;
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .drive__line {
+    margin-top: 10px;
+  }
+  .drive__title {
+    /* ¿Qué vehículo voy a conducir? */
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .drive__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+    /* Black */
+    color: #1A202C;
+  }
+  .drive__card {
+    display: flex;
+    justify-content: center;
+  }
+  .drive__card__item {
+    /* Rectangle 21 */
+    padding: 20px 25px;
+    position: relative;
+    width: 300px !important;
+    height: auto;
+    padding-top: 15%;
+    margin-bottom: 50px;
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .drive__card__item-image {
+    position: absolute;
+    top: -15%; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Para que la imagen esté encima del contenido */
+  }
+  .drive__card__item-title {
+    /* RENAULT LOGAN */
+  }
+  .drive__card__item-title h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.25px;
+    line-height: 47px;
+    /* identical to box height, or 151% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .drive__card__item-subtitle {
+    /* CARACTERÍSTICAS */
+  }
+  .drive__card__item-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-text {
+    /* Botón antipánico, GC, dirección hidráulica y aire acondicionado, sistema de audio con MP3, conectividad bluetooth, ABS, airbags delanteros. */
+  }
+  .drive__card__item-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .drive__btn {
+    /* Style=Filled */
+    /* Button */
+    width: 172px;
+    height: 56px;
+    border: 0px #644EFA;
+    background: #644EFA;
+    border-radius: 8px;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    align-items: center;
+    /* White */
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 989px) {
+  .drive {
+    background: #FFFFFF !important;
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .drive__line {
+    margin-top: 10px;
+  }
+  .drive__title {
+    /* ¿Qué vehículo voy a conducir? */
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .drive__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+    /* Black */
+    color: #1A202C;
+  }
+  .drive__card {
+    display: flex;
+    justify-content: center;
+  }
+  .drive__card__item {
+    /* Rectangle 21 */
+    margin-top: 10px;
+    padding: 20px 25px;
+    position: relative;
+    width: auto !important;
+    height: auto;
+    padding-top: 15%;
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 120px !important;
+  }
+  .drive__card__item-image {
+    position: absolute;
+    top: -100px !important; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Para que la imagen esté encima del contenido */
+  }
+  .drive__card__item-title {
+    /* RENAULT LOGAN */
+  }
+  .drive__card__item-title h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.25px;
+    line-height: 47px;
+    /* identical to box height, or 151% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .drive__card__item-subtitle {
+    /* CARACTERÍSTICAS */
+  }
+  .drive__card__item-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-text {
+    /* Botón antipánico, GC, dirección hidráulica y aire acondicionado, sistema de audio con MP3, conectividad bluetooth, ABS, airbags delanteros. */
+  }
+  .drive__card__item-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .drive__btn {
+    /* Style=Filled */
+    /* Button */
+    width: 172px;
+    height: 56px;
+    border: 0px #644EFA;
+    background: #644EFA;
+    border-radius: 8px;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    align-items: center;
+    /* White */
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 563px) {
+  .drive {
+    background: #FFFFFF !important;
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .drive__line {
+    margin-top: 10px;
+  }
+  .drive__title {
+    /* ¿Qué vehículo voy a conducir? */
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .drive__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 130px;
+    /* Black */
+    color: #1A202C;
+  }
+  .drive__card {
+    display: flex;
+    justify-content: center;
+  }
+  .drive__card__item {
+    /* Rectangle 21 */
+    margin-top: 10px;
+    padding: 20px 25px;
+    position: relative;
+    width: auto !important;
+    height: auto;
+    padding-top: 15%;
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 120px !important;
+  }
+  .drive__card__item-image {
+    position: absolute;
+    top: -120px !important; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Para que la imagen esté encima del contenido */
+  }
+  .drive__card__item-title {
+    /* RENAULT LOGAN */
+  }
+  .drive__card__item-title h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.25px;
+    line-height: 47px;
+    /* identical to box height, or 151% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .drive__card__item-subtitle {
+    /* CARACTERÍSTICAS */
+  }
+  .drive__card__item-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-text {
+    /* Botón antipánico, GC, dirección hidráulica y aire acondicionado, sistema de audio con MP3, conectividad bluetooth, ABS, airbags delanteros. */
+  }
+  .drive__card__item-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .drive__btn {
+    /* Style=Filled */
+    /* Button */
+    width: 172px;
+    height: 56px;
+    border: 0px #644EFA;
+    background: #644EFA;
+    border-radius: 8px;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    align-items: center;
+    /* White */
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 444px) {
+  .drive {
+    background: #FFFFFF !important;
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .drive__line {
+    margin-top: 10px;
+  }
+  .drive__title {
+    /* ¿Qué vehículo voy a conducir? */
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    /* Neutral/900 */
+    color: #111827;
+  }
+  .drive__subtitle {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 130px;
+    /* Black */
+    color: #1A202C;
+  }
+  .drive__card {
+    display: flex;
+    justify-content: center;
+  }
+  .drive__card__item {
+    /* Rectangle 21 */
+    margin-top: 50px;
+    padding: 68px 25px;
+    position: relative;
+    width: auto !important;
+    height: auto;
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 120px !important;
+  }
+  .drive__card__item-image {
+    position: absolute;
+    top: -135px !important; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Para que la imagen esté encima del contenido */
+  }
+  .drive__card__item-title {
+    /* RENAULT LOGAN */
+  }
+  .drive__card__item-title h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.25px;
+    line-height: 47px;
+    /* identical to box height, or 151% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .drive__card__item-subtitle {
+    /* CARACTERÍSTICAS */
+  }
+  .drive__card__item-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-text {
+    /* Botón antipánico, GC, dirección hidráulica y aire acondicionado, sistema de audio con MP3, conectividad bluetooth, ABS, airbags delanteros. */
+  }
+  .drive__card__item-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .drive__card__item-logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .drive__btn {
+    /* Style=Filled */
+    /* Button */
+    width: 172px;
+    height: 56px;
+    border: 0px #644EFA;
+    background: #644EFA;
+    border-radius: 8px;
+    /* Label */
+    /* Body md/SemiBold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: "liga" off;
+    align-items: center;
+    /* White */
+    color: #FFFFFF;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+.howtorent {
+  padding: 86px 0px;
+  text-align: center;
+  background-color: #EDE9FE;
+}
+.howtorent__title {
+  /* ¿Cómo rentar un vehículo? */
+  /* Display lg / Bold */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  align-items: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.howtorent__subtitle {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  /* Body lg / Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  /* Neutral/900 */
+  color: #111827;
+}
+.howtorent__information {
+  margin-top: 75px;
+}
+.howtorent__information__image {
+  margin-right: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+}
+.howtorent__information__image #svg1-phone {
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+.howtorent__information__image #svg2-phone {
+  z-index: 3;
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+}
+.howtorent__information__image #svg3-phone {
+  z-index: 3;
+  position: absolute;
+  top: 37%;
+  right: 55%;
+}
+.howtorent__information__image #svg4-phone {
+  z-index: 3;
+  position: absolute;
+  bottom: 45%;
+  right: 30%;
+}
+.howtorent__information__image #svg5-phone {
+  z-index: 3;
+  position: absolute;
+  bottom: 35%;
+  left: 33%;
+}
+.howtorent__information__image #svg6-phone {
+  z-index: 3;
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+}
+.howtorent__information__image img {
+  margin-top: 100px;
+}
+.howtorent__information__items {
+  display: flex;
+  margin-bottom: 30px;
+  padding-top: 34px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  /* Creative design */
+  /* White */
+  background: #FFFFFF;
+  /* Effect-1 */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.howtorent__information__items-logo {
+  margin-top: 1px;
+  margin-right: 20px;
+}
+.howtorent__information__items-texts-title {
+  /* Llená el formulario */
+  /* COMPLETÁ EL FORMULARIO */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  text-transform: uppercase;
+  /* Black */
+  color: #232233;
+}
+.howtorent__information__items-texts-subtitle {
+  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+  font-family: "Inter";
+  font-style: normal;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  /* Gray ( Paragraph )  */
+  color: #6C6C72;
+}
+.howtorent__btn {
+  /* Style=Filled */
+  margin-top: 71px;
   box-sizing: border-box;
   /* Auto layout */
   /* Do something */
   /* body/small */
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -308,103 +4517,901 @@
   border-radius: 50px;
 }
 
-.drive {
-  background-color: #EEEEEE;
-  padding: 50px 0px;
-  text-align: center;
+@media (max-width: 1199px) {
+  .howtorent {
+    padding: 86px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+  }
+  .howtorent__information {
+    margin-top: 0px !important;
+  }
+  .howtorent__information__image {
+    margin-right: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center !important;
+    position: relative;
+  }
+  .howtorent__information__image #svg1-phone {
+    z-index: 3;
+    position: absolute;
+    top: 180px !important;
+    left: 220px !important;
+  }
+  .howtorent__information__image #svg2-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 200px !important;
+    left: 250px !important;
+  }
+  .howtorent__information__image #svg3-phone {
+    z-index: 3;
+    position: absolute;
+    top: 200px !important;
+    right: 450px !important;
+  }
+  .howtorent__information__image #svg4-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 250px !important;
+    right: 330px !important;
+  }
+  .howtorent__information__image #svg5-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 150px !important;
+    left: 400px !important;
+  }
+  .howtorent__information__image #svg6-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 100px !important;
+    left: 480px !important;
+  }
+  .howtorent__information__image img {
+    margin-top: 0px !important;
+    margin-bottom: 100px !important;
+  }
+  .howtorent__information__items {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .howtorent__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .howtorent__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .howtorent__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .howtorent__btn {
+    /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    /* Auto layout */
+    /* Do something */
+    /* body/small */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    /* Neutral/0 */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    gap: 10px;
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+  }
 }
-.drive__title {
-  /* ¿Que vehículos voy a conducir? */
+@media (max-width: 580px) {
+  .howtorent {
+    padding: 86px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+  }
+  .howtorent__information {
+    margin-top: 0px !important;
+  }
+  .howtorent__information__image {
+    margin-right: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center !important;
+    position: relative;
+  }
+  .howtorent__information__image #svg1-phone {
+    z-index: 3;
+    position: absolute;
+    top: 180px !important;
+    left: 220px !important;
+  }
+  .howtorent__information__image #svg2-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 200px !important;
+    left: 250px !important;
+  }
+  .howtorent__information__image #svg3-phone {
+    z-index: 3;
+    position: absolute;
+    top: 200px !important;
+    right: 360px !important;
+  }
+  .howtorent__information__image #svg4-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 250px !important;
+    right: 330px !important;
+  }
+  .howtorent__information__image #svg5-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 150px !important;
+    left: 400px !important;
+  }
+  .howtorent__information__image #svg6-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 48px !important;
+    left: 200px !important;
+  }
+  .howtorent__information__image img {
+    width: 350px !important;
+    margin-top: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  .howtorent__information__items {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .howtorent__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .howtorent__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .howtorent__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .howtorent__btn {
+    /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    /* Auto layout */
+    /* Do something */
+    /* body/small */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    /* Neutral/0 */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    gap: 10px;
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .howtorent {
+    padding: 86px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+  }
+  .howtorent__information {
+    margin-top: 0px !important;
+  }
+  .howtorent__information__image {
+    margin-right: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center !important;
+    position: relative;
+  }
+  .howtorent__information__image #svg1-phone {
+    z-index: 3;
+    position: absolute;
+    top: 180px !important;
+    left: 274px !important;
+  }
+  .howtorent__information__image #svg2-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 200px !important;
+    left: 300px !important;
+  }
+  .howtorent__information__image #svg3-phone {
+    z-index: 3;
+    position: absolute;
+    top: 200px !important;
+    right: 299px !important;
+  }
+  .howtorent__information__image #svg4-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 200px !important;
+    right: 280px !important;
+  }
+  .howtorent__information__image #svg5-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 150px !important;
+    left: 200px !important;
+  }
+  .howtorent__information__image #svg6-phone {
+    z-index: 3;
+    position: absolute;
+    bottom: 48px !important;
+    left: 200px !important;
+  }
+  .howtorent__information__image img {
+    width: 300px !important;
+    margin-top: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  .howtorent__information__items {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .howtorent__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .howtorent__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .howtorent__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .howtorent__btn {
+    /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    /* Auto layout */
+    /* Do something */
+    /* body/small */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    /* Neutral/0 */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    gap: 10px;
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .howtorent {
+    padding: 86px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+  }
+  .howtorent__information {
+    margin-top: 0px !important;
+  }
+  .howtorent__information__image {
+    margin-right: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center !important;
+    position: relative;
+  }
+  .howtorent__information__image img {
+    width: 300px !important;
+    margin-top: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  .howtorent__information__items {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* Creative design */
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .howtorent__information__items-logo {
+    margin-top: 1px;
+    margin-right: 20px;
+  }
+  .howtorent__information__items-texts-title {
+    /* Llená el formulario */
+    /* COMPLETÁ EL FORMULARIO */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    /* Black */
+    color: #232233;
+  }
+  .howtorent__information__items-texts-subtitle {
+    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    font-family: "Inter";
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+  }
+  .howtorent__btn {
+    /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    /* Auto layout */
+    /* Do something */
+    /* body/small */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    /* Neutral/0 */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    gap: 10px;
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+  }
+}
+.form {
+  padding: 50px 0px 200px 0px;
+  text-align: center;
+  background-color: #EDE9FE;
+  margin: auto;
+}
+.form__title {
+  /* ¡Registrate ahora! */
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 48px;
-  line-height: 150%;
-  /* identical to box height, or 72px */
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #486284;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  align-items: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+  color: #644EFA;
 }
-.drive__subtitle {
-  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+.form__line {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: #EDE9FE;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.form__subtitle {
+  /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+  /* Body lg / Regular */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
-  margin-top: 30px;
+  line-height: 28px;
+  /* or 156% */
+  align-items: center;
   text-align: center;
-  /* Black */
-  color: #1A202C;
+  font-feature-settings: "liga" off;
+  color: #644EFA;
+  margin-bottom: 70px;
 }
-.drive__card {
+.form__main {
+  /* Request a Quote */
+  padding: 60px 0px;
+  margin: auto;
+  /* Gray/00 */
+  background: #FFFFFF;
+  box-shadow: 0px 24px 56px rgba(6, 28, 61, 0.12);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.form__main-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form__main-input input {
+  /* Input Field */
+  box-sizing: border-box;
+  width: 300px;
+  height: 48px;
+  /* Gray/00 */
+  background: #FFFFFF !important;
+  /* Gray/100 */
+  border: 1px solid #E6E8EC !important;
+  border-radius: 5px !important;
+}
+.form__main-btn {
+  /* Button */
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 472px;
+  height: 50px;
+  align-items: center;
+  /* Primary/500 */
+  background: #0B63E5;
+  border-radius: 7px;
+  /* Button */
+}
+.form__main-btn h4 {
+  /* Button/Regular */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px !important;
+  line-height: 48px;
+  /* identical to box height, or 300% */
+  text-transform: capitalize;
+  /* Gray/00 */
+  color: #FFFFFF;
+}
+.form__main-btn svg {
+  margin-top: -5px;
+}
+.form__main-question {
+  /* Attach File */
+  /* ¿Ya tenés una cuenta en Cabify? */
+  padding: 15px 25px;
+  /* Gray/50 */
+  background: #F5F6F7;
+  border-radius: 7px;
+  /* Inside auto layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__main-question-last {
   display: flex;
   justify-content: center;
 }
-.drive__card__item {
-  width: 304px;
-  height: 388px;
-  background-image: url("../../../byfreedom/build/img/drive.png");
-  background-position: center;
-  background-size: contain;
-  margin: 0px 30px;
-  margin-top: 66px;
-  margin-bottom: 30px;
-}
-.drive__btn {
-  /* Style=Filled */
+.form__main-question-last-btn {
+  /* Button */
   box-sizing: border-box;
-  /* Neutral/10 */
-  background: #486284;
-  /* Neutral/10 */
-  border: 1px solid #486284;
-  border-radius: 50px;
+  display: flex;
   align-items: center;
-  padding: 12px 20px;
-  /* Do something */
-  /* body/small */
+  justify-content: center;
+  width: 85px;
+  height: 40px;
+  /* Gray/00 */
+  background: #FFFFFF;
+  /* Gray/100 */
+  border: 1px solid #E6E8EC;
+  border-radius: 5px;
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  /* identical to box height, or 286% */
+  text-transform: capitalize;
+  /* Gray/900 */
+  color: #061C3D;
+}
+.form__main-question-text {
+  /* Body/Medium/500 */
+}
+.form__main-question-text h3 {
+  font-family: "Inter";
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
   /* identical to box height, or 150% */
-  letter-spacing: 0.5px;
-  /* Neutral/0 */
-  color: #FFFFFF;
+  /* Gray/700 */
+  color: #42526B !important;
+}
+.form__main h3 {
+  /* Convertite en conductor completando el siguiente formulario */
+  /* Subheading/01 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  text-align: center;
+  letter-spacing: -0.012em;
+  /* Gray/900 */
+  color: #061C3D;
 }
 
-.sponsors {
-  background-color: white;
-  height: auto;
-  overflow: hidden;
-  padding: 25px;
-  background-color: red;
+@media (max-width: 520px) {
+  .form {
+    padding: 50px 0px 200px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+    margin: auto;
+  }
+  .form__title {
+    /* ¡Registrate ahora! */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: "liga" off;
+    color: #644EFA;
+  }
+  .form__line {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #EDE9FE;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .form__subtitle {
+    /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+    /* Body lg / Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: "liga" off;
+    color: #644EFA;
+    margin-bottom: 70px;
+  }
+  .form__main {
+    /* Request a Quote */
+    padding: 60px 0px;
+    margin: auto;
+    /* Gray/00 */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 56px rgba(6, 28, 61, 0.12);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__main-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form__main-input input {
+    /* Input Field */
+    box-sizing: border-box;
+    width: 300px;
+    height: 48px;
+    /* Gray/00 */
+    background: #FFFFFF !important;
+    /* Gray/100 */
+    border: 1px solid #E6E8EC !important;
+    border-radius: 5px !important;
+  }
+  .form__main-btn {
+    /* Button */
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 300px !important;
+    height: 50px;
+    align-items: center;
+    /* Primary/500 */
+    background: #0B63E5;
+    border-radius: 7px;
+    /* Button */
+  }
+  .form__main-btn h4 {
+    /* Button/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 48px;
+    /* identical to box height, or 300% */
+    text-transform: capitalize;
+    /* Gray/00 */
+    color: #FFFFFF;
+  }
+  .form__main-btn svg {
+    margin-top: -5px;
+  }
+  .form__main-question {
+    /* Attach File */
+    /* ¿Ya tenés una cuenta en Cabify? */
+    padding: 15px 25px;
+    /* Gray/50 */
+    background: #F5F6F7;
+    border-radius: 7px;
+    /* Inside auto layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form__main-question-last {
+    display: flex;
+    justify-content: center;
+  }
+  .form__main-question-last-btn {
+    /* Button */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 40px;
+    /* Gray/00 */
+    background: #FFFFFF;
+    /* Gray/100 */
+    border: 1px solid #E6E8EC;
+    border-radius: 5px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    text-transform: capitalize;
+    /* Gray/900 */
+    color: #061C3D;
+  }
+  .form__main-question-text {
+    /* Body/Medium/500 */
+  }
+  .form__main-question-text h3 {
+    font-family: "Inter";
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    /* identical to box height, or 150% */
+    /* Gray/700 */
+    color: #42526B !important;
+  }
+  .form__main h3 {
+    /* Convertite en conductor completando el siguiente formulario */
+    /* Subheading/01 */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+    text-align: center;
+    letter-spacing: -0.012em;
+    /* Gray/900 */
+    color: #061C3D;
+  }
 }
-.sponsors__owl-carousel {
-  background-color: blue;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: 700;
 }
-
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
 .reviews {
-  background-color: blue;
+  position: relative;
+  z-index: 2;
+}
+.reviews .svg {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.reviews .carousel-inner {
+  background-color: #EDE9FE !important;
 }
 .reviews__container {
   display: flex;
   justify-content: center;
 }
 .reviews__card {
+  /* Rectangle 77 */
   width: 350px;
-  background: #D3DCE7;
-  border-radius: 10px;
-  padding: 30px 40px;
+  padding: 40px 30px;
+  background: #FFFFFF;
+  margin-bottom: 50px;
+  border-radius: 41px 40px 40px 40px;
 }
 .reviews__card__text {
   /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+  margin-top: 30px;
+  /* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
-  /* or 188% */
-  display: flex;
-  align-items: center;
-  color: #486284;
+  line-height: 150%;
+  /* or 24px */
+  /* Neutral/Black */
+  color: #2C2E33;
 }
 .reviews__card__header {
   display: flex;
@@ -413,6 +5420,7 @@
 .reviews__card__header__number {
   padding-top: 10px;
   /* 4.5 */
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -423,8 +5431,8 @@
   display: flex;
 }
 .reviews__card__header-profile-picture {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
   background-size: cover;
   background-position: center center;
@@ -432,128 +5440,239 @@
   margin-right: 10px;
 }
 .reviews__card__header-names {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .reviews__card__header-names-title {
   /* Viezh Robert */
+  /* Michael Lee */
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-  color: #486284;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+  /* Primary/Indigo light */
+  color: #2F1C48;
 }
 .reviews__card__header-names-subtitle {
   /* Warsaw, Poland */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #486284;
-}
-.reviews #carouselExampleDark1 {
-  height: 458px;
-  background-color: #EEEEEE;
-  display: flex;
-  flex-direction: column;
-}
-.reviews .container-btn {
-  display: flex;
-  justify-content: start;
-}
-.reviews .carousel-indicators-review {
-  display: flex;
-  justify-content: start !important;
-}
-
-.howtorent {
-  padding: 86px 0px;
-  text-align: center;
-}
-.howtorent__title {
-  text-align: center;
+  /* Small Business Owner of a Local Cafe */
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 150%;
-  /* or 72px */
-  letter-spacing: -0.02em;
-  color: #486284;
-}
-.howtorent__subtitle {
-  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  /* Black */
-  color: #1A202C;
-  /* Rectangle 23792 */
-}
-.howtorent__information {
-  display: flex;
-  margin-top: 75px;
-}
-.howtorent__information__img {
-  width: 566px;
-  height: 528px;
-  background-image: url("../../../byfreedom/build/img/drive.png");
-  background-position: center;
-  background-size: contain;
-}
-.howtorent__information__items {
-  display: flex;
-  margin-bottom: 25px;
-}
-.howtorent__information__items-texts-title {
-  /* Llená el formulario */
-  padding: 0px 30px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;
-  /* identical to box height, or 33px */
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  /* Black */
-  color: #1A202C;
-}
-.howtorent__information__items-texts-subtitle {
-  /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
-  padding: 0px 30px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 175%;
-  /* or 28px */
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  text-align: start;
-  /* Black */
-  color: #1A202C;
-}
-.howtorent__btn {
-  /* Style=Filled */
-  margin-top: 71px;
-  box-sizing: border-box;
-  /* Auto layout */
-  /* Do something */
-  /* body/small */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  letter-spacing: 0.5px;
-  /* Neutral/0 */
-  color: #FFFFFF;
-  padding: 12px 20px;
-  gap: 10px;
-  /* Neutral/10 */
-  background: #486284;
-  /* Neutral/10 */
-  border: 1px solid #486284;
-  border-radius: 50px;
+  line-height: 150%;
+  /* or 24px */
+  /* Primary/Indigo light */
+  color: #2F1C48;
 }
 
-/* Rectangle 265 */
+.reviews__container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1195px) {
+  .carousel-indicators-review {
+    margin: -1px !important;
+  }
+  .card-1 {
+    display: none !important;
+  }
+  .reviews {
+    position: relative;
+    z-index: 2;
+  }
+  .reviews .svg {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .reviews .carousel-inner {
+    background-color: #EDE9FE !important;
+    height: 450px !important;
+  }
+  .reviews__container {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews__card {
+    /* Rectangle 77 */
+    width: 350px;
+    padding: 40px 30px;
+    background: #FFFFFF;
+    border-radius: 41px 40px 40px 40px;
+  }
+  .reviews__card__text {
+    /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+    margin-top: 30px;
+    /* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    /* Neutral/Black */
+    color: #2C2E33;
+  }
+  .reviews__card__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews__card__header__number {
+    padding-top: 10px;
+    /* 4.5 */
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #486284;
+  }
+  .reviews__card__header-profile {
+    display: flex;
+  }
+  .reviews__card__header-profile-picture {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  .reviews__card__header-names {
+    padding-top: 2px;
+  }
+  .reviews__card__header-names-title {
+    /* Viezh Robert */
+    /* Michael Lee */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    /* Primary/Indigo light */
+    color: #2F1C48;
+  }
+  .reviews__card__header-names-subtitle {
+    /* Warsaw, Poland */
+    /* Small Business Owner of a Local Cafe */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    /* Primary/Indigo light */
+    color: #2F1C48;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-indicators-review {
+    margin: 60px !important;
+  }
+  .reviews {
+    position: relative;
+    z-index: 2;
+  }
+  .reviews .svg {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .reviews .carousel-inner {
+    background-color: #EDE9FE !important;
+    height: 550px !important;
+  }
+  .reviews__container {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews__card {
+    /* Rectangle 77 */
+    width: 350px;
+    padding: 40px 30px;
+    background: #FFFFFF;
+    border-radius: 41px 40px 40px 40px;
+  }
+  .reviews__card__text {
+    /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+    margin-top: 30px;
+    /* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    /* Neutral/Black */
+    color: #2C2E33;
+  }
+  .reviews__card__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews__card__header__number {
+    padding-top: 10px;
+    /* 4.5 */
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #486284;
+  }
+  .reviews__card__header-profile {
+    display: flex;
+  }
+  .reviews__card__header-profile-picture {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  .reviews__card__header-names {
+    padding-top: 2px;
+  }
+  .reviews__card__header-names-title {
+    /* Viezh Robert */
+    /* Michael Lee */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    /* Primary/Indigo light */
+    color: #2F1C48;
+  }
+  .reviews__card__header-names-subtitle {
+    /* Warsaw, Poland */
+    /* Small Business Owner of a Local Cafe */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    /* Primary/Indigo light */
+    color: #2F1C48;
+  }
+  .card-1 {
+    display: none !important;
+  }
+  .card-2 {
+    display: none !important;
+  }
+  .carousel-inner {
+    height: 400px !important;
+  }
+}

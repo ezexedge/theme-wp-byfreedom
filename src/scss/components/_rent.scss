@@ -1,0 +1,431 @@
+@use '../fonts' as *;
+
+
+.rent{
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+    position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+    z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+
+    
+    &__line{
+    align-items: center;
+text-align: center;
+margin: auto;
+background-color: white;
+width: 100%;
+margin-top: 20px;
+margin-bottom: 25px;
+    }
+    &__title{
+/* ¿Por qué Rentar? */
+align-items: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+        font-family: 'Plus Jakarta Sans';
+/* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+
+
+text-align: center;
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+.negrita{
+    font-weight: 700;
+}
+
+
+    }
+    .rent-middle{
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    &__information{
+        margin-top: 55px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            /* Frame 4800 */
+
+/* Auto layout */
+padding: 0px;
+gap: 20px;
+background-color: #644EFA;
+width: 350px;
+height: 334px;
+
+border-radius: 20px;
+
+
+
+
+            
+            &-logo{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            &-text{
+                padding: 0px 35px;
+                &-title{
+   /* Cabify Partnership. Trabajá con seguridad */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 140%;
+/* or 34px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+
+
+                }
+                &-text{
+                    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+
+
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 175%;
+                    /* or 24px */
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.02em;
+
+                    /* Black */
+                    color: #1A202C;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1193px) {
+    .rent{
+        background-color: #FFFFFF;
+        padding: 86px 0px;
+        position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+        z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+    
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+        .rent-middle{
+            margin-left: 36px;
+            margin-right: 36px;
+        }
+        &__information{
+            margin-top: 55px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+    
+                /* Frame 4800 */
+    
+    /* Auto layout */
+    padding: 0px;
+    gap: 20px;
+    background-color: #644EFA;
+    width: 260px;
+    height: 334px;
+    
+    border-radius: 20px;
+    
+    
+    
+    
+                
+                &-logo{
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                &-text{
+                    padding: 0px 35px;
+                    &-title{
+       /* Cabify Partnership. Trabajá con seguridad */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    
+    
+    
+    
+                    }
+                    &-text{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    
+    
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 175%;
+                        /* or 24px */
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+    
+                        /* Black */
+                        color: #1A202C;
+    
+    
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 995px) {
+    .rent{
+        background-color: #FFFFFF;
+        padding: 86px 0px;
+        position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+        z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+    
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+        .rent-middle{
+            margin-left: 36px;
+            margin-right: 36px;
+        }
+        &__information{
+            margin-top: 55px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+    
+                /* Frame 4800 */
+    
+    /* Auto layout */
+    padding: 0px;
+    gap: 20px;
+    background-color: #644EFA;
+    width: 350px;
+    height: 334px;
+    
+    border-radius: 20px;
+    
+    
+    
+    
+                
+                &-logo{
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                &-text{
+                    padding: 0px 35px;
+                    &-title{
+       /* Cabify Partnership. Trabajá con seguridad */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    
+    
+    
+    
+                    }
+                    &-text{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+    
+    
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 175%;
+                        /* or 24px */
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+    
+                        /* Black */
+                        color: #1A202C;
+    
+    
+                    }
+                }
+            }
+        }
+    }
+
+}

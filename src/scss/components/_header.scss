@@ -1,0 +1,465 @@
+@use '../fonts' as *;
+
+
+.header{
+    position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+    z-index: 2; // Asegura que el header esté encima del .pattern
+    display: flex;
+    align-items: start;
+    margin:  50px 0px;
+    &__img {
+        align-self: flex-start;
+
+
+
+        img{
+            width: 510px;
+            height: auto;
+        }
+        &__url{
+            position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+   
+            #svg1 {
+                z-index: 3;
+width: 50px;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 10%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                right:50%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+               
+            #svg1-conductor {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 15%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                right:23%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+            #svg1-invertir {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 12%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:15%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            #svg2-invertir {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 35%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:23%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            #svg3-invertir {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 28%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:34%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            #svg4-invertir {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 48%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:44%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            #svg2{
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+
+                    top: 30%;
+                    left: 19%;
+                    width: 110px;
+
+            }
+            #svg3{
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+
+                    top:20%;
+                    right: 30%;
+                    width: 95px;
+
+            }
+            #svg4{
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+
+                    bottom: 0%;
+                    left: 15%;
+                    width: 120px;
+
+            }
+            #svg5{
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+
+                    bottom: 5%;
+                    right: 20%;
+                    width: 110px;
+
+            }
+
+            #svg2-conductor{
+                position: absolute;
+            
+                top:30%;
+                right: 38%;
+            }
+            #svg3-conductor{
+                position: absolute;
+                bottom:40%;
+                left: 58%;
+            }
+ 
+            #svg4-conductor {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 40%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                right:11%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+             
+            #svg5-conductor {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 30%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:16%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            #svg6-conductor {
+                z-index: 3;
+
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 15%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:-1%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                width: 180px;
+            }
+            
+      
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+        margin-top: 90px;
+
+        &-start{
+            font-weight: 500;
+            font-size: 21px;
+            font-style: normal;
+            line-height: 22px;
+            /* identical to box height, or 105% */
+            letter-spacing: 0.15px;
+            
+            /* Neutral/10 */
+            color: #486284; 
+        }
+        &-title{
+/* ¿Querés trabajar con las app de transporte y aumentar tus ingresos? */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 62px;
+/* or 113% */
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+color: #3E58A5;
+
+
+
+
+        }
+        &-subtitle{
+
+/* Encontrá el vehículo perfecto para vos. Tenemos modelos 2018 en adelante y 0km disponibles con planes diarios y semanales a tu medida. */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+letter-spacing: 0.5px;
+
+color: #000000;
+
+
+
+
+        }
+        &__btn {
+            display: flex;
+            &-conducir{
+                /* Style=Filled */
+
+            box-sizing: border-box;
+            margin-right: 5px;
+            /* Auto layout */
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 175px;
+height: 56px;
+
+background: #644EFA;
+border-radius: 8px;
+
+/* Label */
+border-color: #644EFA;
+border: 0px;
+/* Body md/SemiBold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+font-feature-settings: 'liga' off;
+
+/* White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+            }
+            &-informacion{
+                /* Style=Outlined */
+svg{
+    margin: 0px 7px;
+}
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 209px;
+height: 56px;
+
+border-radius: 8px;
+
+background-color: white;
+border: 0px;
+/* Label */
+
+
+/* Body md/SemiBold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+font-feature-settings: 'liga' off;
+
+color: #644EFA;
+
+
+
+
+
+
+
+            }
+        }
+        &__logo{
+            /* Trusted by: */
+            margin-top: 89px;
+            display: flex;
+            /* subtitle/small */
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 22px;
+            /* or 105% */
+            letter-spacing: 0.15px;
+
+            /* Neutral/6 */
+            color: #9CB0C9;
+            &-img{
+                background-image: url('../../../byfreedom/build/img/cabify.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 114px;
+                height: 38px;
+                margin-left: 15px;
+                background-position: center;
+                margin-top: -5px;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+.invertir-header{
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1204px) {
+    .carousel-indicators{
+        margin: -48px;
+    }
+    .pattern{
+        height: 170px!important;
+        .left{
+          
+        }
+        .right{
+           
+        }
+    }
+
+    .header{
+        position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+        z-index: 2; // Asegura que el header esté encima del .pattern
+        display: flex;
+        align-items: start;
+        margin:  0px 0px;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start; /* Coloca este hijo al principio del contenedor flexbox */
+            margin-top: 50px;
+        }
+        &__img {
+            margin-top: 30px !important;
+        }
+    }
+
+    .carousel-inner{
+        height: auto!important;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .pattern{
+        height: 170px!important;
+        .left{
+          width: 50%;
+        }
+        .right{
+            width: 50%;
+
+        }
+    }
+
+    .invertir-main{
+        margin-top: 55px !important;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    .pattern{
+        height: 150px!important;
+        .left{
+          width: 50%;
+        }
+        .right{
+            width: 50%;
+            margin-bottom: -16px!important;
+        }
+    }
+
+    .invertir-main{
+        margin-top: 40px !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .pattern{
+        height: 150px!important;
+        .left{
+          width: 50%;
+        }
+        .right{
+            width: 50%;
+
+        }
+    }
+
+    .invertir-main{
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 513px) {
+
+    .pattern{
+        height: 150px!important;
+        .left{
+          width: 50%;
+        }
+        .right{
+            width: 50%;
+
+        }
+    }
+    .header{
+        &__img{
+            img{
+                width: 420px !important;
+            }
+        }
+    }
+
+    .invertir-main{
+        margin-top: 25px !important;
+    }
+}
+
+@media (max-width: 433px) {
+
+    .pattern{
+        height: 150px!important;
+        .left{
+          width: 45%;
+        }
+        .right{
+            width: 45%;
+
+        }
+    }
+    .header{
+        &__img{
+            img{
+                width: 350px !important;
+            }
+        }
+    }
+
+    .invertir-main{
+        margin-top: 20px !important;
+    }
+}

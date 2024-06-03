@@ -1,0 +1,200 @@
+@use '../fonts' as *;
+
+.footer {
+    /* Footer */
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #648AFA;
+
+    &__redes {
+        &-logos {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            svg {
+                margin-right: 21px;
+            }
+        }
+        &-text {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            /* Our vision is to provide convenience and help increase your sales business. */
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+        }
+    }
+
+    &__info {
+        h1 {
+            /* La Empresa */
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            /* or 30px */
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style: none;
+            li {
+                margin: 30px -32px;
+                /* ¿Por qué rentar? ¿Como invertir? FAQ´s */
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                /* or 24px */
+                letter-spacing: -0.02em;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    /* or 24px */
+                    letter-spacing: -0.02em;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        /* ©2024 By Freedom. All rights reserved */
+        /* Semibold/Type@16 */
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+    }
+}
+
+.last {
+    display: flex;
+    &__text {
+        margin-right: 25px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 80px;
+
+        &__redes {
+            &-logos {
+                justify-content: center;
+                svg {
+                    margin-right: 15px;
+                }
+            }
+            &-text {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        &__info {
+            h1 {
+                font-size: 18px;
+                text-align: center;
+            }
+            ul {
+                li {
+                    font-size: 14px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+            }
+        }
+
+        &__bottom {
+            font-size: 14px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    .last {
+        flex-direction: column;
+        align-items: center;
+        &__text {
+            margin-bottom: 10px;
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        &__redes {
+            &-logos {
+                flex-direction: column;
+                align-items: center;
+                svg {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            &-text {
+                font-size: 12px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__info {
+            h1 {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    font-size: 12px;
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        &__bottom {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+
+    .last {
+        &__text {
+            margin-bottom: 5px;
+        }
+    }
+}

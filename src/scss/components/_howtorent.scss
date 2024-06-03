@@ -1,0 +1,839 @@
+@use '../fonts' as *;
+
+
+.howtorent{
+    padding: 86px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+    &__title{
+
+  /* ¿Cómo rentar un vehículo? */
+
+/* Display lg / Bold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+align-items: center;
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+/* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+
+
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+align-items: center;
+text-align: center;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+
+
+
+
+    }
+
+
+    &__information{
+        margin-top: 75px;
+        &__image{
+            margin-right: 20px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            position: relative;
+               
+            #svg1-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 30%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:2%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+               
+            #svg2-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                bottom: 40%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:10%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+               
+            #svg3-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                top: 37%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                right:55%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+            #svg4-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                bottom: 45%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                right:30%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+               
+            #svg5-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                bottom: 35%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:33%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+            #svg6-phone {
+                z-index: 3;
+                position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                bottom: 28%; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                left:50%; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+            }
+               
+
+            img{
+            
+                margin-top: 100px;
+            }
+        }
+        &__items{
+            display: flex;
+            margin-bottom: 30px;
+            padding-top: 34px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+
+            /* Creative design */
+
+
+
+/* White */
+background: #FFFFFF;
+/* Effect-1 */
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+        &-logo{
+            margin-top: 1px;
+            margin-right: 20px;
+        }
+
+            &-texts{
+                &-title{
+                    /* Llená el formulario */
+
+/* COMPLETÁ EL FORMULARIO */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+text-transform: uppercase;
+
+/* Black */
+color: #232233;
+
+
+
+
+                }
+                &-subtitle{
+                    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+
+font-family: 'Inter';
+font-style: normal;
+text-align: start;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+/* Gray ( Paragraph )  */
+color: #6C6C72;
+
+
+
+                }
+            }
+        }
+    }
+    &__btn{
+        /* Style=Filled */
+margin-top: 71px;
+box-sizing: border-box;
+
+/* Auto layout */
+/* Do something */
+
+/* body/small */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: 0.5px;
+
+/* Neutral/0 */
+color: #FFFFFF;
+
+
+padding: 12px 20px;
+gap: 10px;
+
+
+/* Neutral/10 */
+background: #486284;
+/* Neutral/10 */
+border: 1px solid #486284;
+border-radius: 50px;
+
+    }
+}
+
+
+@media (max-width: 1199px) {
+
+    .howtorent{
+        padding: 86px 0px;
+        text-align: center;
+        background-color: #EDE9FE;
+
+   
+    
+    
+        &__information{
+          margin-top: 0px!important;
+            &__image{
+                margin-right: 20px;
+                display: flex;
+                align-items: start;
+                justify-content: center!important;
+                position: relative;
+                   
+                #svg1-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top: 180px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:220px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg2-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:250px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg3-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top:200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:450px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg4-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 250px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:330px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg5-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 150px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:400px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg6-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 100px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:480px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+    
+                img{
+                
+                    margin-top: 0px!important;
+                    margin-bottom: 100px!important;
+                }
+            }
+            &__items{
+                display: flex;
+                margin-bottom: 30px;
+                padding-top: 34px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+    
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+        &__btn{
+            /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    /* Do something */
+    
+    /* body/small */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    
+    /* Neutral/0 */
+    color: #FFFFFF;
+    
+    
+    padding: 12px 20px;
+    gap: 10px;
+    
+    
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+    
+        }
+    }
+}
+
+@media (max-width: 580px) {
+
+    .howtorent{
+        padding: 86px 0px;
+        text-align: center;
+        background-color: #EDE9FE;
+
+   
+    
+    
+        &__information{
+          margin-top: 0px!important;
+            &__image{
+                margin-right: 20px;
+                display: flex;
+                align-items: start;
+                justify-content: center!important;
+                position: relative;
+                   
+                #svg1-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top: 180px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:220px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg2-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:250px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg3-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top:200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:360px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg4-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 250px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:330px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg5-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 150px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:400px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg6-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 48px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:200px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+    
+                img{
+                
+                    width: 350px!important;
+                    margin-top: 0px!important;
+                    margin-bottom: 50px!important;
+                }
+            }
+            &__items{
+                display: flex;
+                margin-bottom: 30px;
+                padding-top: 34px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+    
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+        &__btn{
+            /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    /* Do something */
+    
+    /* body/small */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    
+    /* Neutral/0 */
+    color: #FFFFFF;
+    
+    
+    padding: 12px 20px;
+    gap: 10px;
+    
+    
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+    
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .howtorent{
+        padding: 86px 0px;
+        text-align: center;
+        background-color: #EDE9FE;
+
+   
+    
+    
+        &__information{
+          margin-top: 0px!important;
+            &__image{
+                margin-right: 20px;
+                display: flex;
+                align-items: start;
+                justify-content: center!important;
+                position: relative;
+                   
+  
+                                      
+                #svg1-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top: 180px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:274px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg2-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:300px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg3-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    top:200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:299px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg4-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 200px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    right:280px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                   
+                #svg5-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 150px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:200px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+                #svg6-phone {
+                    z-index: 3;
+                    position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+                    bottom: 48px!important; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+                    left:200px!important; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+                }
+    
+                img{
+                
+                    width: 300px!important;
+                    margin-top: 0px!important;
+                    margin-bottom: 50px!important;
+                }
+            }
+            &__items{
+                display: flex;
+                margin-bottom: 30px;
+                padding-top: 34px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+    
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+        &__btn{
+            /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    /* Do something */
+    
+    /* body/small */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    
+    /* Neutral/0 */
+    color: #FFFFFF;
+    
+    
+    padding: 12px 20px;
+    gap: 10px;
+    
+    
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+    
+        }
+    }
+}
+@media (max-width: 426px) {
+
+    .howtorent{
+        padding: 86px 0px;
+        text-align: center;
+        background-color: #EDE9FE;
+
+   
+    
+    
+        &__information{
+          margin-top: 0px!important;
+            &__image{
+                margin-right: 20px;
+                display: flex;
+                align-items: start;
+                justify-content: center!important;
+                position: relative;
+ 
+                   
+    
+                img{
+                
+                    width: 300px!important;
+                    margin-top: 0px!important;
+                    margin-bottom: 50px!important;
+                }
+            }
+            &__items{
+                display: flex;
+                margin-bottom: 30px;
+                padding-top: 34px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+    
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+        &__btn{
+            /* Style=Filled */
+    margin-top: 71px;
+    box-sizing: border-box;
+    
+    /* Auto layout */
+    /* Do something */
+    
+    /* body/small */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.5px;
+    
+    /* Neutral/0 */
+    color: #FFFFFF;
+    
+    
+    padding: 12px 20px;
+    gap: 10px;
+    
+    
+    /* Neutral/10 */
+    background: #486284;
+    /* Neutral/10 */
+    border: 1px solid #486284;
+    border-radius: 50px;
+    
+        }
+    }
+}

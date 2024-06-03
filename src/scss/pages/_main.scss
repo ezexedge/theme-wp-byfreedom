@@ -1,0 +1,737 @@
+@use '../fonts' as *;
+
+
+
+
+
+
+/* image 4 */
+
+
+.sponsors{
+    background-color:white;
+    overflow: hidden;
+    
+    &__owl-carousel{
+        border-top: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB;
+
+        /* Divider */
+
+
+
+
+        display: flex !important;
+        margin-bottom: 50px;
+        align-items: center; /* Alinea verticalmente los elementos */
+        .item{
+            height: 200px;
+            display: flex !important;
+            align-items: center!important;
+            img{
+                height: 35px;
+            }
+
+        }
+        .item-3{
+            margin: 0px 20px!important;
+            img{
+                height: 20px!important;
+
+            }
+        }
+        .item-4{
+            margin: 0px 20px!important;
+            img{
+
+            }
+        }
+        .item-1{
+            margin: 0px 0px!important;
+            img{
+margin-bottom: 5px;
+            }
+        }
+        .item-2{
+            margin: 0px 0px!important;
+            img{
+                margin-bottom: 5px;
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* Rectangle 265 */
+
+
+
+.team{
+    background-color: #FFFFFF;
+    padding: 86px 0px;
+    margin-top: 100px;
+    &__line{
+    align-items: center;
+text-align: center;
+margin: auto;
+background-color: white;
+width: 100%;
+margin-top: 20px;
+margin-bottom: 25px;
+    }
+    &__title{
+/* ¿Por qué Rentar? */
+align-items: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+        font-family: 'Plus Jakarta Sans';
+/* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+
+
+/* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+
+
+
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+align-items: center;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+
+
+    }
+    .rent-middle{
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    &__information{
+        margin-top: 140px;
+        &-card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            svg{
+                margin-bottom: 26px;
+            }
+            h3{
+            /* Darrell Steward */
+
+
+
+/* Body/Xtra Large/500 */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+text-align: center;
+
+/* Gray/900 */
+color: #061C3D;
+
+
+
+            }
+            p{
+                /* CEO & Founder of Gilio */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+
+/* Gray/600 */
+color: #6A778B;
+
+
+
+
+            }
+        }
+    }
+}
+
+
+
+
+.middle-card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-control::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    /* Gray/500 */
+    color: #838E9E; 
+}
+  /* Gmail */
+
+
+  .form-select {
+    width: 300px;
+  }
+
+  .form-select {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    /* Gray/500 */
+    color: #838E9E!important; 
+}
+.no{
+    margin-left: 15px;
+}
+
+// .accordion-button::after{
+//     background-image: url("../../../byfreedom/build/img/plus.png");
+// }
+// .accordion-button:not(.collapsed)::after{
+
+//     background-image: url("../../../byfreedom/build/img/plus.png");
+// }
+
+.patter-top{
+    top: -60px;
+}
+.pattern {
+    z-index: 10000;
+    position: relative; // Posiciona el contenedor relativamente con respecto al header
+    height: auto; // Ajusta la altura del contenedor para que quepa todo el contenido de los SVG
+
+    .left {
+        z-index: 3;
+
+        position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+        bottom: -60; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+        left: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+    }
+    
+    // Estilos para el segundo SVG (derecha)
+    .right {
+        z-index: 3;
+
+        position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+        bottom: -40; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+        right: 0; // Alinea el borde derecho del SVG con el borde derecho del contenedor
+    }
+
+}
+
+
+
+
+
+
+.rect {
+    position: absolute;
+
+}
+
+.rect1 {
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    top: 87px;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-items: center;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect2 {
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    top: 343px;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect3 {
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    left: 388px;
+    display: flex;
+    justify-content: start;
+        top: 173px;
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+    
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 175%;
+    /* or 61px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    
+    color: #FFFFFF;
+    
+    
+        }
+
+}
+
+.rect4 {
+    top: 259px;
+
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    left: 388px;
+    display: flex;
+    justify-content: start;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+
+}
+
+.rect5 {
+    top: 343px;
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    left: 388px;
+    display: flex;
+    justify-content: start;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect6 {
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    top: 87px;
+    left: 388px;
+    display: flex;
+    justify-content: start;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size:19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect7 {
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    top: 173px;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect8 {
+    width: 234px;
+    height: 74px;
+    top: 259px;
+    left: 0;
+    width: 234px;
+    height: 74px;
+    background-color: #CAD7FD;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 175%;
+/* or 61px */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+    }
+}
+
+.rect9 {
+    width: 154px;
+    height: 336px;
+    background-color: white;
+    top: 84px;
+    left: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rect10 {
+    width: 154px;
+    height: 84px;
+    background-color: #644EFA;
+    bottom: 0;
+    left: 234px;
+    justify-content: space-evenly;
+    display: flex;
+    h1{
+        /* VS. */
+
+
+
+font-family: 'Plus Jakarta Sans';
+font-style: italic;
+font-weight: 300;
+font-size: 40px;
+line-height: 23px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+    }
+}
+.top
+{
+   
+      width:620px;
+      display: flex;
+      justify-content: space-between;
+      top: -153px;
+
+}
+svg{
+    
+}
+
+.rect1-child {
+    min-width: 0px;
+    height: 74px;
+    background-color: #644EFA;
+}
+
+.rect2-child {
+    width: 115px;
+    height: 74px;
+    background-color: #644EFA;
+}
+
+.rect6-child {
+    width: 234px;
+    height: 74px;
+    background-color: #644EFA;
+}
+
+.rect3-child,.rect4-child,.rect5-child{
+    width: 234px;
+    height: 74px;
+    background-color: #644EFA;
+}
+
+.rect7-child,.rect8-child {
+    width: 234px;
+    height: 74px;
+    background-color: #644EFA;
+}
+
+
+
+.increase__information__img {
+    display: flex;
+    flex-direction: column; /* Cambia a row si deseas que estén alineados horizontalmente */
+    align-items: flex-start; /* Alinea todos los elementos al inicio (izquierda) */
+}
+
+.increase__information__img .rect,
+.increase__information__img .img-logo {
+    align-self: flex-start; /* Asegura que cada elemento esté alineado al inicio (izquierda) */
+}
+
+.rect-top-svg-1{
+    align-self: end!important;
+    
+}
+
+
+.rect-top-svg-2{
+    align-self: end!important;
+
+    img{
+        width: 202px;
+        height: 236px;
+        padding-bottom: 15px;
+    }
+    
+}
+
+.rect9{
+    h4{
+        /* RENTABILIDAD */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+
+/* or 153% */
+display: flex;
+align-items: center;
+text-align: center;
+line-height: 0.2!important;
+/* Black */
+color: #1A202C;
+
+
+    }
+}
+
+.rect9-1{
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rect9-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.rect9-3{
+    flex: 1;
+    width: 100%;
+    align-items: center;
+text-align: center;
+display: flex;
+
+justify-content: center;
+}
+.rect9-4{
+  
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -10px;
+
+
+    
+
+
+}
+
+.invertir-main{
+    margin-top: 120px;
+}

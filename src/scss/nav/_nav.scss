@@ -1,0 +1,74 @@
+@use '../fonts' as *;
+
+nav{
+   background-color: #FFFFFF!important;
+   ul{
+    align-items: center;
+    li{
+        /* Rent a Car */
+
+
+a{
+    //font-family: 'Inter';
+/* Rent a Car */
+
+
+font-style: normal!important;
+font-weight: 600!important;
+font-size: 14px!important;
+line-height: 24px!important;
+/* identical to box height, or 171% */
+text-align: center;
+letter-spacing: 0.5px!important;
+
+color: #111827!important;
+margin-left: 35px!important;
+
+}
+button{
+    margin-left: 35px;
+
+    /* Button */
+
+/* Auto layout */
+
+align-items: center!important;
+padding: 0px!important;
+
+width: 148px!important;
+height: 56px!important;
+
+background: #644EFA!important;
+border-radius: 8px!important;
+border: 1px solid   #644EFA!important;
+/* Label */
+
+
+/* Body md/SemiBold */
+//font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+font-feature-settings: 'liga' off;
+
+/* White */
+color: #FFFFFF;
+
+
+
+
+
+}
+
+
+
+    }
+   }
+}
+
+.nav-select{
+    color: #644EFA!important;
+}

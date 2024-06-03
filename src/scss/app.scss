@@ -1,6 +1,16 @@
 @import "base/base";
+@import "nav/nav";
 @import "bootstrap5/header";
-
-
-@import "home/header";
-@import "home/main";
+@import "pages/contact";
+@import "pages/main";
+@import "pages/faqs";
+@import "pages/footer";
+@import "components/characteristics";
+@import "components/invest";
+@import "components/increase";
+@import "components/header";
+@import "components/rent";
+@import "components/drive";
+@import "components/howtorent";
+@import "components/form";
+@import "components/review";

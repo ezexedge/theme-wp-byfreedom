@@ -1,0 +1,80 @@
+@use '../fonts' as *;
+
+.increase-text-2{
+    display: none !important;
+}
+.increase {
+    background-color: #EDE9FE;
+    padding: 90px 0px 56px 0px;
+    
+    &__information {
+
+        &__text {
+           
+            padding: 60px 0px 75px 0px;
+
+            &-title {
+/* Potenciá tus ingresos con una automatización financiera y generá ingresos pasivos. */
+
+
+/* Display lg / Bold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+margin-bottom: 44px;
+
+            }
+
+            &-subtitle {
+                margin-top: 50px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                color: #1A202C;
+            }
+        }
+
+        &__img {
+            margin-top: 120px;
+            height: 400px; /* Ajustar altura */
+            width: auto; /* Ajustar ancho */
+            display: flex;
+            flex-direction: column; /* Cambia a row si deseas que estén alineados horizontalmente */
+            align-items: flex-start; /* Alinea todos los elementos al inicio (izquierda) */
+        
+
+            &-logo {
+                width: 40vw; /* Ajustar ancho del logo */
+                height: auto; /* Mantener proporciones */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 -40px;
+                transform: scale(0.8); /* Reducir tamaño del contenido */
+            }
+        }
+    }
+}
+
+@media (max-width: 1194px) {
+    .increase-text-2{
+        display: block !important;
+    }
+    .increase-text-1{
+        display: none !important;
+    }
+}

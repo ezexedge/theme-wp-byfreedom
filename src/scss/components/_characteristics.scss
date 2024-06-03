@@ -1,0 +1,669 @@
+@use '../fonts' as *;
+
+
+.characteristics{
+    background-color: #FFFFFF;
+    padding: 86px 0px 120px 0px;
+    
+    &__line{
+    align-items: center;
+text-align: center;
+margin: auto;
+background-color: white;
+width: 100%;
+margin-top: 20px;
+margin-bottom: 25px;
+    }
+    &__title{
+/* ¿Por qué Rentar? */
+align-items: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+        font-family: 'Plus Jakarta Sans';
+/* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+
+margin-bottom: 100px;
+text-align: center;
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 28px;
+/* or 156% */
+
+font-feature-settings: 'liga' off;
+
+/* Neutral/900 */
+color: #111827;
+
+.negrita{
+    font-weight: 700;
+}
+
+
+    }
+
+    &__information{
+        display: flex;
+        &__items{
+            display: flex;
+            margin-bottom: 35px;
+            padding-top: 34px;
+            padding-left: 25px;
+            padding-bottom: 20px;
+           max-width: 540px; 
+       
+       
+        
+            /* Creative design */
+
+
+
+/* White */
+background: #FFFFFF;
+/* Effect-1 */
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+        &-logo{
+            margin-top: 1px;
+            margin-right: 20px;
+        }
+
+            &-texts{
+                &-title{
+                    /* Llená el formulario */
+
+/* COMPLETÁ EL FORMULARIO */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+text-transform: uppercase;
+
+/* Black */
+color: #232233;
+
+
+
+
+                }
+                &-subtitle{
+                    /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+
+font-family: 'Inter';
+font-style: normal;
+text-align: start;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+/* Gray ( Paragraph )  */
+color: #6C6C72;
+
+
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1197px) {
+    .characteristics{
+        background-color: #FFFFFF;
+        padding: 86px 0px 120px 0px;
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+    
+        &__information{
+            display: flex;
+            &__items{
+                display: flex;
+                margin-bottom: 35px;
+                padding-top: 34px;
+                padding-left: 25px;
+                padding-bottom: 20px;
+               max-width: 430px!important; 
+           
+           
+            
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .characteristics{
+        background-color: #FFFFFF;
+        padding: 86px 0px 120px 0px;
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+    
+        &__information{
+            display: flex;
+        
+            &__items{
+                display: flex;
+                margin-bottom: 35px;
+                padding-top: 34px;
+                padding-left: 25px;
+                padding-bottom: 20px;
+               max-width: 328px!important;
+           
+           
+            
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 771px) {
+    .characteristics{
+        background-color: #FFFFFF;
+        padding: 86px 0px 120px 0px;
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+    
+        &__information{
+            display: flex;
+            flex-direction: column!important;
+        
+            &__items{
+                display: flex;
+                margin-bottom: 35px;
+                padding-top: 34px;
+                padding-left: 25px;
+                padding-bottom: 20px;
+                min-width: 540px!important;
+           
+            
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 728px) {
+    .characteristics{
+        background-color: #FFFFFF;
+        padding: 86px 0px 120px 0px;
+        
+        &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+        &__title{
+    /* ¿Por qué Rentar? */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Porque te libera de preocupaciones innecesarias. Deja atrás los costos de mantenimiento, seguro y de preciación. Alquila cuando lo requieras y disfruta del viajes sin complicaciones. ¡Conduce con confianza y disfruta del recorido! */
+    
+    margin-bottom: 100px;
+    text-align: center;
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+    
+    font-feature-settings: 'liga' off;
+    
+    /* Neutral/900 */
+    color: #111827;
+    
+    .negrita{
+        font-weight: 700;
+    }
+    
+    
+        }
+    
+        &__information{
+            display: flex;
+            flex-direction: column!important;
+        
+            &__items{
+                display: flex;
+                margin-bottom: 35px;
+                padding-top: 34px;
+                padding-left: 25px;
+                padding-bottom: 20px;
+                min-width: 100%!important;
+
+           
+            
+                /* Creative design */
+    
+    
+    
+    /* White */
+    background: #FFFFFF;
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+            &-logo{
+                margin-top: 1px;
+                margin-right: 20px;
+            }
+    
+                &-texts{
+                    &-title{
+                        /* Llená el formulario */
+    
+    /* COMPLETÁ EL FORMULARIO */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    
+    /* Black */
+    color: #232233;
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices. */
+    
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    /* Gray ( Paragraph )  */
+    color: #6C6C72;
+    
+    
+    
+                    }
+                }
+            }
+        }
+    }
+}

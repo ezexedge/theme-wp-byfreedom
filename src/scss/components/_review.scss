@@ -1,0 +1,449 @@
+@use '../fonts' as *;
+
+
+.reviews{
+    position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+    z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+
+    .svg {
+        z-index: 3;
+
+        position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+        bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+        right: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+    }
+    .carousel-inner{
+        background-color: #EDE9FE!important;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+      
+    }
+    &__card{
+/* Rectangle 77 */
+
+width: 350px;
+padding: 40px 30px;
+background: #FFFFFF;
+margin-bottom: 50px;
+border-radius: 41px 40px 40px 40px;
+
+        &__text{
+            /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+
+
+margin-top: 30px;
+/* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+/* Neutral/Black */
+color: #2C2E33;
+
+
+
+
+
+        }
+    
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            &__number{
+                
+                    padding-top: 10px;
+                    /* 4.5 */
+
+
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+
+
+color: #486284;
+
+
+                
+            }
+            &-profile{
+                display: flex;
+                &-picture{
+                    width: 60px;
+                    height: 60px;
+                    background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+            &-names{
+                padding-top: 2px;
+                &-title{
+                    /* Viezh Robert */
+
+/* Michael Lee */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 140%;
+/* identical to box height, or 34px */
+
+/* Primary/Indigo light */
+color: #2F1C48;
+
+
+
+
+
+                }
+                &-subtitle{
+                    /* Warsaw, Poland */
+
+
+/* Small Business Owner of a Local Cafe */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+/* Primary/Indigo light */
+color: #2F1C48;
+
+
+
+
+
+
+                }
+            }
+        }
+        
+    }
+
+
+    
+}
+
+.reviews__container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 1195px) {
+    .carousel-indicators-review{
+        margin: -1px!important;
+    }
+.card-1{
+    display: none !important;
+}
+.reviews{
+    position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+    z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+
+    .svg {
+        z-index: 3;
+
+        position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+        bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+        right: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+    }
+    .carousel-inner{
+        background-color: #EDE9FE!important;
+        height: 450px!important;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+      
+    }
+    &__card{
+/* Rectangle 77 */
+
+width: 350px;
+padding: 40px 30px;
+background: #FFFFFF;
+border-radius: 41px 40px 40px 40px;
+
+        &__text{
+            /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+
+
+margin-top: 30px;
+/* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+/* Neutral/Black */
+color: #2C2E33;
+
+
+
+
+
+        }
+    
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            &__number{
+                
+                    padding-top: 10px;
+                    /* 4.5 */
+
+
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+
+
+color: #486284;
+
+
+                
+            }
+            &-profile{
+                display: flex;
+                &-picture{
+                    width: 60px;
+                    height: 60px;
+                    background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+            &-names{
+                padding-top: 2px;
+                &-title{
+                    /* Viezh Robert */
+
+/* Michael Lee */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 140%;
+/* identical to box height, or 34px */
+
+/* Primary/Indigo light */
+color: #2F1C48;
+
+
+
+
+
+                }
+                &-subtitle{
+                    /* Warsaw, Poland */
+
+
+/* Small Business Owner of a Local Cafe */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+/* Primary/Indigo light */
+color: #2F1C48;
+
+
+
+
+
+
+                }
+            }
+        }
+        
+    }
+
+
+    
+}
+}
+
+@media (max-width: 700px) {
+    .carousel-indicators-review{
+        margin: 60px!important;
+    }
+    .reviews{
+        position: relative; // Asegura que .pattern esté posicionado relativo a este elemento
+        z-index: 2; // Asegura que el contenido principal esté encima del .pattern
+    
+        .svg {
+            z-index: 3;
+    
+            position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+            bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+            right: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+        }
+        .carousel-inner{
+            background-color: #EDE9FE!important;
+            height: 550px!important;
+        }
+        &__container{
+            display: flex;
+            justify-content: center;
+          
+        }
+        &__card{
+    /* Rectangle 77 */
+    
+    width: 350px;
+    padding: 40px 30px;
+    background: #FFFFFF;
+    border-radius: 41px 40px 40px 40px;
+    
+            &__text{
+                /* “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”. */
+    
+    
+    margin-top: 30px;
+    /* Nusa Tech significantly improved our online presence. From website design to PPC campaigns, they deliver outstanding results. Highly recommended! */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    /* Neutral/Black */
+    color: #2C2E33;
+    
+    
+    
+    
+    
+            }
+        
+            &__header{
+                display: flex;
+                justify-content: space-between;
+                &__number{
+                    
+                        padding-top: 10px;
+                        /* 4.5 */
+    
+    
+    
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    
+    
+    color: #486284;
+    
+    
+                    
+                }
+                &-profile{
+                    display: flex;
+                    &-picture{
+                        width: 60px;
+                        height: 60px;
+                        background-image: url("../../../byfreedom/build/img/profile-picture.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                        border-radius: 100%;
+                        margin-right: 10px;
+                    }
+                }
+                &-names{
+                    padding-top: 2px;
+                    &-title{
+                        /* Viezh Robert */
+    
+    /* Michael Lee */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    
+    /* Primary/Indigo light */
+    color: #2F1C48;
+    
+    
+    
+    
+    
+                    }
+                    &-subtitle{
+                        /* Warsaw, Poland */
+    
+    
+    /* Small Business Owner of a Local Cafe */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    /* Primary/Indigo light */
+    color: #2F1C48;
+    
+    
+    
+    
+    
+    
+                    }
+                }
+            }
+            
+        }
+    
+    
+        
+    }
+    .card-1{
+        display: none !important;
+    }
+    .card-2{
+        display: none !important;
+    }
+    .carousel-inner{
+       height: 400px !important;
+    }
+    }

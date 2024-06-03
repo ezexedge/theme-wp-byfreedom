@@ -1,0 +1,664 @@
+@use '../fonts' as *;
+
+
+.invest{
+    padding: 86px 0px;
+    text-align: center;
+
+    z-index: 10000;
+    position: relative; // Posiciona el contenedor relativamente con respecto al header
+    height: auto; // Ajusta la altura del contenedor para que quepa todo el contenido de los SVG
+
+    background-color: #644EFA;
+
+    .svg {
+        z-index: 3;
+
+        position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+        bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+        left: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+    }
+    &__line{
+        align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #644EFA;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+        }
+    &__title{
+/* ¿Por qué invertir en ByFreedom? */
+
+
+/* Display lg / Bold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+
+align-items: center;
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+color: #FFFFFF;
+
+
+
+    }
+    &__subtitle{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+
+        font-family: 'Plus Jakarta Sans';
+/* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+
+
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+align-items: center;
+text-align: center;
+font-feature-settings: 'liga' off;
+
+color: #FFFFFF;
+
+
+
+
+    }
+    &__information{
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &__card{
+            /* Feature Card */
+
+width: 260px;
+height: 148px;
+
+background: #FFFFFF;
+border-radius: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+            &-number{
+                /* Number */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+color: #000000;
+
+    
+
+
+            }
+            &-text{
+                /* Label */
+
+
+/* Body md / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+/* identical to box height, or 150% */
+text-align: center;
+font-feature-settings: 'liga' off;
+margin-top: -8px;
+color: #000000;
+
+
+
+
+            }
+
+        }
+        &__number h3{
+
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 70px!important;
+        /* or 122px */
+        text-align: center;
+
+        color: #000000;
+
+
+        }
+        &__text{
+            /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+            padding: 0px 35px;
+
+    //    font-family: 'Plus Jakarta Sans';
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 175%;
+                /* or 24px */
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.02em;
+        
+                /* Black */
+                color: #1A202C;
+        
+            }
+
+        }
+        &__heart{
+            position: relative;
+            img{
+                position: absolute;
+                top: 0; 
+                left: 45%;
+            }
+
+        }
+    }
+    &__btn{
+
+        /* _Button base */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 8px;
+
+width: 160px;
+height: 56px;
+
+border-radius: 8px;
+
+/* Button */
+
+
+background: #648AFA;
+border: 0px transparent;
+/* Label */
+
+
+/* Body md/SemiBold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+font-feature-settings: 'liga' off;
+
+/* White */
+color: #FFFFFF;
+
+margin-top: 30px;
+
+    }
+}
+
+@media (max-width: 1204px) {
+    .invest{
+        padding: 86px 0px;
+        text-align: center;
+    
+        z-index: 10000;
+        position: relative; // Posiciona el contenedor relativamente con respecto al header
+        height: auto; // Ajusta la altura del contenedor para que quepa todo el contenido de los SVG
+    
+        background-color: #644EFA;
+    
+        .svg {
+            z-index: 3;
+    
+            position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+            bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+            left: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+        }
+        &__line{
+            align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #644EFA;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 25px;
+            }
+        &__title{
+    /* ¿Por qué invertir en ByFreedom? */
+    
+    
+    /* Display lg / Bold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    color: #FFFFFF;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+    
+    
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    color: #FFFFFF;
+    
+    
+    
+    
+        }
+        &__information{
+            margin-top: 75px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            &__card{
+                /* Feature Card */
+    
+
+    height: 148px;
+    
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+                &-number{
+                    /* Number */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    color: #000000;
+    
+        
+    
+    
+                }
+                &-text{
+                    /* Label */
+    
+    
+    /* Body md / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    margin-top: -8px;
+    color: #000000;
+    
+    
+    
+    
+                }
+    
+            }
+            &__number h3{
+    
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 70px!important;
+            /* or 122px */
+            text-align: center;
+    
+            color: #000000;
+    
+    
+            }
+            &__text{
+                /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+                padding: 0px 35px;
+    
+        //    font-family: 'Plus Jakarta Sans';
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 175%;
+                    /* or 24px */
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.02em;
+            
+                    /* Black */
+                    color: #1A202C;
+            
+                }
+    
+            }
+            &__heart{
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0; 
+                    left: 45%;
+                }
+    
+            }
+        }
+        &__btn{
+    
+            /* _Button base */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    
+ 
+    height: 56px;
+    
+    border-radius: 8px;
+    
+    /* Button */
+    
+    
+    background: #648AFA;
+    border: 0px transparent;
+    /* Label */
+    
+    
+    /* Body md/SemiBold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    /* White */
+    color: #FFFFFF;
+    
+    margin-top: 30px;
+    
+        }
+    }
+}
+
+@media (max-width: 572px) {
+    .invest{
+        padding: 86px 0px;
+        text-align: center;
+    
+        z-index: 10000;
+        position: relative; // Posiciona el contenedor relativamente con respecto al header
+        height: auto; // Ajusta la altura del contenedor para que quepa todo el contenido de los SVG
+    
+        background-color: #644EFA;
+    
+        .svg {
+            z-index: 3;
+    
+            position: absolute; // Posiciona el SVG de forma absoluta dentro del contenedor
+            bottom: 0; // Alinea el borde inferior del SVG con el borde inferior del contenedor
+            left: 0; // Alinea el borde izquierdo del SVG con el borde izquierdo del contenedor
+        }
+        &__line{
+            align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #644EFA;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 25px;
+            }
+        &__title{
+    /* ¿Por qué invertir en ByFreedom? */
+    
+    
+    /* Display lg / Bold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    color: #FFFFFF;
+    
+    
+    
+        }
+        &__subtitle{
+            /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et */
+    
+            font-family: 'Plus Jakarta Sans';
+    /* Nuestro enfoque en la innovación y la excelencia operativa nos posiciona como líderes en el mercado. Con una alianza estratégica con Cabify, estamos bien posicionados para capitalizar las oportunidades de crecimiento y ofrecer un retorno sólido a nuestros inversores. */
+    
+    
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    color: #FFFFFF;
+    
+    
+    
+    
+        }
+        &__information{
+            margin-top: 75px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+div{
+   display: flex;
+   justify-content: center;
+}
+            &__card{
+                /* Feature Card */
+    
+
+    height: 148px;
+    
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+                &-number{
+                    /* Number */
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    color: #000000;
+    
+        
+    
+    
+                }
+                &-text{
+                    /* Label */
+    
+    
+    /* Body md / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    margin-top: -8px;
+    color: #000000;
+    
+    
+    
+    
+                }
+    
+            }
+            &__number h3{
+    
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 70px!important;
+            /* or 122px */
+            text-align: center;
+    
+            color: #000000;
+    
+    
+            }
+            &__text{
+                /* Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis. */
+                padding: 0px 35px;
+    
+        //    font-family: 'Plus Jakarta Sans';
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 175%;
+                    /* or 24px */
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.02em;
+            
+                    /* Black */
+                    color: #1A202C;
+            
+                }
+    
+            }
+            &__heart{
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0; 
+                    left: 45%;
+                }
+    
+            }
+        }
+        &__btn{
+    
+            /* _Button base */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+    
+    width: 300px;
+    height: 56px;
+    
+    border-radius: 8px;
+    
+    /* Button */
+    
+    
+    background: #648AFA;
+    border: 0px transparent;
+    /* Label */
+    
+    
+    /* Body md/SemiBold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    /* White */
+    color: #FFFFFF;
+    
+    margin-top: 30px;
+    
+        }
+    }
+}

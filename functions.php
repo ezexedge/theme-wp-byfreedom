@@ -36,6 +36,10 @@ function byfreedom_scripts()
 
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js', array('jquery', 'popper'), '5.3.0-alpha1', true);
 
+    wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array('jquery', 'popper'), '5.3.0-alpha1', true);
+    wp_enqueue_script('scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', array('gsap'), '3.9.1', true);
+
+
     wp_enqueue_script('custom-script', $archivo_js, array('jquery'), '1.0', true);
     wp_enqueue_script('custom', $archivo_js1, array('jquery'), '1.0', true);
 

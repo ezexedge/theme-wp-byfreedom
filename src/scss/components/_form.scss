@@ -1,0 +1,449 @@
+.form{
+    padding: 50px 0px 200px 0px;
+    text-align: center;
+    background-color: #EDE9FE;
+    margin: auto;
+    &__title{
+        /* ¡Registrate ahora! */
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+align-items: center;
+letter-spacing: -0.025em;
+font-feature-settings: 'liga' off;
+
+color: #644EFA;
+
+
+    }
+    &__line{
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #EDE9FE;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    &__subtitle{
+        /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+
+
+
+/* Body lg / Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+align-items: center;
+text-align: center;
+font-feature-settings: 'liga' off;
+
+color: #644EFA;
+margin-bottom: 70px;
+
+
+    }
+    &__main{
+        /* Request a Quote */
+
+padding: 60px 0px;
+margin: auto;
+/* Gray/00 */
+background: #FFFFFF;
+box-shadow: 0px 24px 56px rgba(6, 28, 61, 0.12);
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+&-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    input{
+        /* Input Field */
+
+box-sizing: border-box;
+
+width: 300px;
+height: 48px;
+
+/* Gray/00 */
+background: #FFFFFF!important;
+/* Gray/100 */
+border: 1px solid #E6E8EC!important;
+border-radius: 5px!important;
+
+    }
+}
+&-btn{
+    /* Button */
+align-self: center;
+display: flex;
+justify-content: center;
+width: 472px;
+height: 50px;
+align-items: center;
+
+/* Primary/500 */
+background: #0B63E5;
+border-radius: 7px;
+
+/* Button */
+
+
+h4{
+
+/* Button/Regular */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px!important;
+line-height: 48px;
+/* identical to box height, or 300% */
+text-transform: capitalize;
+
+/* Gray/00 */
+color: #FFFFFF;
+
+}
+svg{
+
+    margin-top: -5px;
+}
+
+
+
+}
+
+&-question{
+    /* Attach File */
+
+/* ¿Ya tenés una cuenta en Cabify? */
+
+
+padding: 15px 25px;
+/* Gray/50 */
+background: #F5F6F7;
+border-radius: 7px;
+
+/* Inside auto layout */
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+&-last{
+    display: flex;
+    justify-content: center;
+    &-btn{
+        /* Button */
+
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 85px;
+height: 40px;
+
+
+/* Gray/00 */
+background: #FFFFFF;
+/* Gray/100 */
+border: 1px solid #E6E8EC;
+border-radius: 5px;
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 40px;
+/* identical to box height, or 286% */
+text-transform: capitalize;
+
+/* Gray/900 */
+color: #061C3D;
+
+
+
+
+    }
+}
+
+&-text{
+    /* Body/Medium/500 */
+ h3{
+    font-family: 'Inter';
+font-style: normal!important;
+font-weight: 500!important;
+font-size: 16px!important;
+line-height: 24px!important;
+/* identical to box height, or 150% */
+
+/* Gray/700 */
+color: #42526B!important;
+
+ }
+
+}
+
+}
+h3{
+    /* Convertite en conductor completando el siguiente formulario */
+
+/* Subheading/01 */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+text-align: center;
+letter-spacing: -0.012em;
+
+/* Gray/900 */
+color: #061C3D;
+
+
+
+}
+
+    }
+}
+
+@media (max-width: 520px) {
+    .form{
+        padding: 50px 0px 200px 0px;
+        text-align: center;
+        background-color: #EDE9FE;
+        margin: auto;
+        &__title{
+            /* ¡Registrate ahora! */
+    
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+    align-items: center;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'liga' off;
+    
+    color: #644EFA;
+    
+    
+        }
+        &__line{
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            background-color: #EDE9FE;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        &__subtitle{
+            /* Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation. */
+    
+    
+    
+    /* Body lg / Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    color: #644EFA;
+    margin-bottom: 70px;
+    
+    
+        }
+        &__main{
+            /* Request a Quote */
+    
+    padding: 60px 0px;
+    margin: auto;
+    /* Gray/00 */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 56px rgba(6, 28, 61, 0.12);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    &-input{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        input{
+            /* Input Field */
+    
+    box-sizing: border-box;
+    
+    width: 300px;
+    height: 48px;
+    
+    /* Gray/00 */
+    background: #FFFFFF!important;
+    /* Gray/100 */
+    border: 1px solid #E6E8EC!important;
+    border-radius: 5px!important;
+    
+        }
+    }
+    &-btn{
+        /* Button */
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 300px!important;
+    height: 50px;
+    align-items: center;
+    
+    /* Primary/500 */
+    background: #0B63E5;
+    border-radius: 7px;
+    
+    /* Button */
+    
+    
+    h4{
+    
+    /* Button/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px!important;
+    line-height: 48px;
+    /* identical to box height, or 300% */
+    text-transform: capitalize;
+    
+    /* Gray/00 */
+    color: #FFFFFF;
+    
+    }
+    svg{
+    
+        margin-top: -5px;
+    }
+    
+    
+    
+    }
+    
+    &-question{
+        /* Attach File */
+    
+    /* ¿Ya tenés una cuenta en Cabify? */
+    
+    
+    padding: 15px 25px;
+    /* Gray/50 */
+    background: #F5F6F7;
+    border-radius: 7px;
+    
+    /* Inside auto layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    &-last{
+        display: flex;
+        justify-content: center;
+        &-btn{
+            /* Button */
+    
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 40px;
+    
+    
+    /* Gray/00 */
+    background: #FFFFFF;
+    /* Gray/100 */
+    border: 1px solid #E6E8EC;
+    border-radius: 5px;
+    
+    
+    
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    /* identical to box height, or 286% */
+    text-transform: capitalize;
+    
+    /* Gray/900 */
+    color: #061C3D;
+    
+    
+    
+    
+        }
+    }
+    
+    &-text{
+        /* Body/Medium/500 */
+     h3{
+        font-family: 'Inter';
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 16px!important;
+    line-height: 24px!important;
+    /* identical to box height, or 150% */
+    
+    /* Gray/700 */
+    color: #42526B!important;
+    
+     }
+    
+    }
+    
+    }
+    h3{
+        /* Convertite en conductor completando el siguiente formulario */
+    
+    /* Subheading/01 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+    text-align: center;
+    letter-spacing: -0.012em;
+    
+    /* Gray/900 */
+    color: #061C3D;
+    
+    
+    
+    }
+    
+        }
+    }  
+}
