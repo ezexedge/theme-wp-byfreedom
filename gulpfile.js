@@ -20,7 +20,7 @@ function imagenes(done) {
 // Función para iniciar Browser-Sync y observar cambios en archivos
 function serve(done) {
   browserSync.init({
-    proxy: "http://byfreedom", // Cambia esto a la URL de tu sitio de WordPress
+    proxy: "http://byfreedom", // Cambia esto a la URL de tu  WordPress LOCAL!!!!
     notify: false,
   });
 
